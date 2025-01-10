@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -29,19 +37,91 @@ body {
 
 #likelion-grid {
   border: 1px solid red;
+  background-color: #f9c756;
   padding: 50px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
   .member {
-    border: 1px solid brown;
-    border-radius: 8px;
-    width: 300px;
-    height: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    background-color: #0d1c3c;
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+
+    box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
   }
 
-  .template {
-    display: none;
+  .member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .member:active {
+    box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  .info-box {
+    padding-top: 10px;
+    margin-top: 30px;
+    background-color: white;
+    width: auto;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+  }
+
+  .info-memoji {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .info-music-box {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid #36c038;
+    border-radius: 20px;
+    width: 150px;
+  }
+
+  .info-music-note{
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+  }
+
+  .info-keyword {
+    padding-top: 20px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .info-name {
+    padding-top: 10px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .info-footer {
+    padding-top: 30px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #a59f9f;
   }
 }
 
