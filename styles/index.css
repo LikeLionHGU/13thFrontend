@@ -24,7 +24,7 @@ body {
   font-family: "Jersey 10";
   font-weight: 400;
   font-style: bold;
-  font-size: 40px;
+  font-size: 50px;
   color: #F9C756;
 
   width: 100%;
@@ -34,33 +34,34 @@ body {
   background: #0D1C3C;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+  position: sticky;
+  top: 1px;
+
   > #header-padding {
     padding: 30px;
   }
 
-  > #header_logo {
+  #header_logo {
     img {
-      width: 40px;
+      width: 80px;
       display: inline-block;
-      padding-right: 20px;
+      padding-right: 30px;
     }
   }
 
-  > #header_text {
+  #header_text {
     display: inline-block;
   }
 }
 
-#header-home {
+#navigation {
   display: inline-block;
+  position: absolute;
+  right: 50px;
 }
 
-#header-about {
-  display: inline-block;
-}
-
-#header-contact {
-  display: inline-block;
+#header-home, #header-about, #header-contact {
+  padding-left: 30px; 
 }
 
 #likelion-header a {
