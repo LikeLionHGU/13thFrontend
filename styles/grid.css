@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     justify-content: center;
   
-    .member {
+    .grid-member {
       margin-right: 50px;
       margin-bottom: 100px;
       background-color: #0d1c3c;
@@ -23,34 +23,35 @@
       transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
     }
   
-    .member:hover {
+    .grid-member:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
     }
   
-    .member:active {
+    .grid-member:active {
       box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
     }
   
-    .info-box {
+    .grid-info-box {
       padding-top: 10px;
       margin-top: 20px;
       background-color: white;
       width: auto;
       height: 200px;
+
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       position: relative;
     }
   
-    .info-memoji {
+    .grid-info-memoji {
       border-radius: 50%;
       height: 150px;
       width: 150px;
       text-align: center;
     }
   
-    .info-memoji-box {
+    .grid-info-memoji-box {
       background-color: white;
       width: 150px;
       height: 150px;
@@ -58,7 +59,7 @@
       margin-left: 25px;
     }
   
-    .info-music-box {
+    .grid-info-music-box {
       margin-top: 10px;
       margin-left: 20px;
       padding: 5px;
@@ -67,32 +68,32 @@
       width: 150px;
     }
   
-    .info-music-box span {
+    .grid-info-music-box span {
       font-size: smaller;
     }
   
-    .info-music-note {
+    .grid-info-music-note {
       padding-right: 5px;
       width: 20px;
       height: 20px;
       vertical-align: sub;
     }
   
-    .info-nick {
+    .grid-info-nick {
       padding-top: 20px;
       font-family: "GmarketSansMedium", sans-serif;
       font-size: 24px;
       font-weight: bold;
       color: #333;
     }
-    .info-name {
+    .grid-info-name {
       padding-top: 10px;
       font-family: "GmarketSansMedium", sans-serif;
       font-size: 24px;
       font-weight: bold;
       color: #333;
     }
-    .info-footer {
+    .grid-info-footer {
       padding-top: 30px;
       font-family: "GmarketSansMedium", sans-serif;
       font-size: 10px;

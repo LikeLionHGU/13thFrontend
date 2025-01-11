@@ -1,4 +1,4 @@
-const info_members = [
+const grid_info_members = [
   {
     num: 1,
     music: "찬란 - 나상현씨밴드",
@@ -7,8 +7,8 @@ const info_members = [
   },
   {
     num: 2,
-    music: "생각중 - ~~",
-    nick: "????",
+    music: "밝은 빛이 가득해 - W..",
+    nick: "생긋생긋",
     name: "김윤채",
   },
   {
@@ -57,29 +57,29 @@ const info_members = [
 
 const likelion_grid = document.getElementById("likelion_grid");
 
-const htmlString = info_members
+const htmlString = grid_info_members
   .map(
     (member) => `
-    <div class="member" onclick="alert('짜잔~~~!')">
-        <div class="info-memoji-box">
+    <div class="grid-member" onclick="alert('짜잔~~~!')">
+        <div class="grid-info-memoji-box">
             <img
-                class="info-memoji"
+                class="grid-info-memoji"
                 src="./assets/img/grid/memoji/memoji${member.num}.png"
                 alt="memoji"
             />
         </div>
-        <div class="info-box">
-            <div class="info-music-box">
+        <div class="grid-info-box">
+            <div class="grid-info-music-box">
               <img
-                  class="info-music-note"
+                  class="grid-info-music-note"
                   src="./assets/img/grid/note.png"
                   alt="note"
               />
               <span>${member.music}</span>
             </div>
-            <div class="info-nick">${member.nick}</div>
-            <div class="info-name">${member.name}</div>
-            <div class="info-footer">- Frontend -</div>
+            <div class="grid-info-nick">${member.nick}</div>
+            <div class="grid-info-name">${member.name}</div>
+            <div class="grid-info-footer">- Frontend -</div>
         </div>
     </div>
 `
