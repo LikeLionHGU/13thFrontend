@@ -109,10 +109,11 @@
 
 .grid-mobile-member {
   width: 800px;
-  border-top: none;
+  border: 1px outset #0d1c3c;
+  border-radius: 20px;
   display: flex;
   flex: 1; /*각 칸들이 동일한 비율 유지하도록 하는 기능*/
-  padding-bottom: 0px;
+  margin-bottom: 10px;
 
   cursor: pointer;
 
@@ -200,6 +201,8 @@
   vertical-align: sub;
 }
 
+
+/* hover 말풍선 */
 .grid-member p {
   position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
   background-color: white;
@@ -243,12 +246,12 @@
   background-color: white;
   width: 200px;
   color: black;
-  top: -50px;
+  top: -65px;
   text-align: center;
   padding: 10px;
   border-radius: 30px;
   left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
-  transform: translateX(-155%); /*중앙배치 : X크기값을 50%만큼 이동*/
+  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
   opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
   transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
 
@@ -265,8 +268,8 @@
   width: 10px;
   height: 10px;
   transform: rotate(45deg) translateX(-50%);
-  bottom: -7px;
-  left: 15%; /*1. 왼쪽에서 50%위치에 둔다.*/
+  bottom: -5px;
+  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
   /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
 }
 
