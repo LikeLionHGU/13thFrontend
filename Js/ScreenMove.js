@@ -19,3 +19,5 @@ const mobBot = document.querySelector("#mob_bot");
 mobTop.onclick = () => goToScroll(mobTop);
 mobAbout.onclick = () => goToScroll(mobAbout);
 mobBot.onclick = () => goToScroll(mobBot);
+
+// push test
