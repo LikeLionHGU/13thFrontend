@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }                       
-  .member{
+  .grid-member{
     width: 100%;
     border: 10px solid #0D1C3C;
     border-top: none;
@@ -53,7 +53,7 @@ body {
     padding-bottom: 0px;
   }
   /*프로필 사진*/
-  .mobile-pic-box{
+  .grid-mobile-pic-box{
 
     box-sizing: border-box;
     width: 50px;
@@ -64,12 +64,12 @@ body {
     border: 1px solid #0D1C3C;
     border-radius: 50%;
   }
-  .mobile-pic{
+  .grid-mobile-pic{
     width: 50px;
     height: 50px;
   }
   /*이름*/
-  .mobile-name{
+  .grid-mobile-name{
     font-family: 'GmarketSansMedium';
     color: #0D1C3C;
     font-size:20px;
@@ -78,7 +78,7 @@ body {
     text-align: left;
   }
   /*키워드*/
-  .mobile-keyword{
+  .grid-mobile-keyword{
     width: 60px;
     height: 15px;
     background: #0D1C3C;
@@ -91,13 +91,13 @@ body {
     
   }
   /*키워드들 묶는 클래스*/
-  .member-info
+  .grid-member-info
   {  
     display: flex;
     flex-direction: row;
   }
   /*음악 박스*/
-  .mobile-music {
+  .grid-mobile-music {
     display: flex;  
     align-items:center;
     justify-content: space-between;
@@ -117,14 +117,14 @@ body {
 
   }
   /*음악 제목*/
-  .mobile-music-title{
+  .grid-mobile-music-title{
     font-family:'GmarketSansMedium';
     font-size: 12px;
     color:#0D1C3C;
 
   }
   /*플레이 버튼*/
-  .mobile-music-icon {
+  .grid-mobile-music-icon {
     height: 17px;
     width: 17px;
     vertical-align: sub;

@@ -75,21 +75,21 @@ const info_members=[
 const likelion_grid=document.getElementById("likelion-grid");
 const htmlString =info_members
     .map(
-        (member) =>`<div class="member">
-        <div class="mobile-pic-box">
-        <img class="mobile-pic" src="${member.num}.png">
+        (member) =>`<div class="grid-member">
+        <div class="grid-mobile-pic-box">
+        <img class="grid-mobile-pic" src="${member.num}.png">
         </div>
         <div>
-          <div class="mobile-name">${member.name}</div>
-          <div class="member-info">
-            <div class="mobile-keyword">${member.key1}</div>
-            <div class="mobile-keyword">${member.key2}</div>
-            <div class="mobile-keyword">${member.key3}</div>
+          <div class="grid-mobile-name">${member.name}</div>
+          <div class="grid-member-info">
+            <div class="grid-mobile-keyword">${member.key1}</div>
+            <div class="grid-mobile-keyword">${member.key2}</div>
+            <div class="grid-mobile-keyword">${member.key3}</div>
           </div>
         </div>
-        <div class="mobile-music">
-          <div class="mobile-music-title">${member.music}</div>
-          <div class="mobile-music-icon-box"><img class="mobile-music-icon" src="note.png"></div>
+        <div class="grid-mobile-music">
+          <div class="grid-mobile-music-title">${member.music}</div>
+          <div class="grid-mobile-music-icon-box"><img class="grid-mobile-music-icon" src="note.png"></div>
         </div>
         </div>
         `
