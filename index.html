@@ -4,31 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>멋사 13기 프론트엔드</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
-  </head> 
+    <link rel="stylesheet" href="./styles/modal.css" />
+  </head>
   <body>
     <!-- Header 영역 -->
     <div id="likelion-header">
       <span id="header_logo">
-        <a href="#"><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo" />
-         <span id="header-text">I <span class="memory--heart"></span> FRONTEND</span>
+        <a href="#"
+          ><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo" />
+          <span id="header-text"
+            >I <span class="memory--heart"></span> FRONTEND</span
+          >
         </a>
       </span>
       <span id="header-home">HOME</span>
       <span id="header-about">ABOUT</span>
       <span id="header-contact">CONTACT</span>
+      <button class="btn-open-modal">Modal열기</button>
+
     </div>
 
     <!-- Grid 영역 -->
-    <div id="likelion_grid">
+    <div id="likelion_grid"></div>
+    <!-- Modal 영역-->
 
-    </div>
+    <div class="modal">
+      <div class="modal_body">
+          <div class="modal_music">
+            <p> 음악 제목 </p>
+            <p> 가수 </p>
+          </div>
+          <div class="modal_profile_picture">
+
+          </div>
+          <p> 이하린 </p>
+          <p> 한줄 좌우명</p>
+
+          <div class="modal_link_box_row">
+            <div class="modal_link_box_col">
+              <img src="./assets/img/github.png" class="modal_link_pic">
+              <p> github </p>
+            </div>
+            <div class="modal_link_box_col">
+              <img src="./assets/img/link.png" class="modal_link_pic">
+              <p> intoduce </p>
+            </div>
+            <div class="modal_link_box_col">
+              <img src="./assets/img/insta.png" class="modal_link_pic">
+              <p> instagram </p>
+            </div>
+          </div>
+      </div>
+      <button class="btn-open-modal">Modal열기</button>
 
     <!-- Footer 영역 -->
     <div id="footer">This is Footer</div>
     <script src="./js/grid.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
