@@ -1,0 +1,279 @@
+/* Rectangle 20 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1917px;
+height: 2265px;
+
+background: #F9C756;
+border: 1px solid #000000;
+
+
+/* image */
+
+position: absolute;
+width: 1917px;
+height: 1706px;
+
+background: url(image.png);
+
+
+/* 김원진 */
+
+position: absolute;
+width: 219px;
+height: 79px;
+
+font-family: 'GmarketSansMedium';
+font-style: normal;
+font-weight: normal;
+
+color: #000000;
+
+
+
+/* 시크도도 */
+
+position: absolute;
+width: 294px;
+height: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+
+
+
+/* -Frontend- */
+
+position: absolute;
+width: 169px;
+height: 31px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 5px;
+line-height: 6px;
+
+color: #A59F9F;
+
+
+
+/* 김원진 */
+
+position: absolute;
+width: 219px;
+height: 79px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+
+
+
+/* 시크도도 */
+
+position: absolute;
+width: 294px;
+height: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+
+
+
+/* -Frontend- */
+
+position: absolute;
+width: 169px;
+height: 31px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 5px;
+line-height: 6px;
+
+color: #A59F9F;
+
+
+
+/* 김원진asdasdasdsad */
+
+position: absolute;
+width: 219px;
+height: 79px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+
+/* 시크도도 */
+
+position: absolute;
+width: 294px;
+height: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+color: #000000;
+
+
+
+/* -Frontend- */
+
+position: absolute;
+width: 169px;
+height: 31px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 5px;
+line-height: 6px;
+
+color: #A59F9F;
+
+
+
+/* Rectangle 27 */
+
+position: absolute;
+width: 453px;
+height: 606px;
+
+background: #0D1C3C;
+border-radius: 80px;
+
+
+/* Rectangle 34 */
+
+position: absolute;
+width: 453px;
+height: 428px;
+
+background: #FFFFFF;
+border-radius: 0px 0px 80px 80px;
+
+
+/* 김원진 */
+
+position: absolute;
+width: 260px;
+height: 79px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 97px;
+
+color: #000000;
+
+
+
+/* 시크도도 */
+
+position: absolute;
+width: 318px;
+height: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 97px;
+
+color: #000000;
+
+
+
+/* image 10 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 260px;
+
+background: url(image.png);
+border: 1px solid #000000;
+border-radius: 125px;
+
+
+/* -Frontend- */
+
+position: absolute;
+width: 380px;
+height: 94px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #A59F9F;
+
+
+
+/* Rectangle 39 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 318px;
+height: 53px;
+
+border: 5px solid #36C038;
+border-radius: 220px;
+
+
+/* 으르렁 - EXO */
+
+position: absolute;
+width: 197px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+
+/* image 13 */
+
+position: absolute;
+width: 40px;
+height: 42px;
+
+background: url(image.png);
