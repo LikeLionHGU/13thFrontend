@@ -13,6 +13,8 @@ body {
   flex-direction: row;
 
   font-family: "Jersey 10";
+  font-weight: 400;
+  font-style: bold;
   color: #F9C756;
 
   width: 100%;
@@ -73,23 +75,9 @@ body {
   }
 }
 
-.header-home,.header-about,.header-contact {
-  padding: 0 30px 0 30px; 
+#header-home, #header-about, #header-contact {
+  padding-left: 30px; 
   font-size: 40px;
-  font-family: "Jersey 10";
-  background-color: #0D1C3C;
-  color: #F9C756;
-  outline: none;
-  border: none;
-}
-.header-contact{
-  padding: 0 20px 0 20px; 
-}
-.header-home:hover,.header-about:hover,.header-contact:hover {
-  cursor: pointer;
-  background-color: #F9C756;
-  color: #0D1C3C;
-  border-radius: 15px;
 }
 
 #likelion-header a {
