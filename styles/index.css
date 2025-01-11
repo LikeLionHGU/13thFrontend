@@ -35,7 +35,7 @@ body {
   padding: 50px;
 }
 
-#likelion-grid {
+#likelion_grid {
   border: 1px solid red;
   background-color: #f9c756;
   padding: 50px;
@@ -55,6 +55,7 @@ body {
     text-align: center;
     padding-top: 20px;
 
+    cursor: pointer;
     box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
   }
@@ -70,7 +71,7 @@ body {
 
   .info-box {
     padding-top: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: white;
     width: auto;
     height: 200px;
@@ -81,9 +82,17 @@ body {
 
   .info-memoji {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
+  }
+
+  .info-memoji-box {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 25px;
   }
 
   .info-music-box {
@@ -95,14 +104,18 @@ body {
     width: 150px;
   }
 
-  .info-music-note{
-    padding-left: 5px;
+  .info-music-box span {
+    font-size: smaller;
+  }
+
+  .info-music-note {
+    padding-right: 5px;
     width: 20px;
     height: 20px;
     vertical-align: sub;
   }
 
-  .info-keyword {
+  .info-nick {
     padding-top: 20px;
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 24px;
@@ -119,8 +132,7 @@ body {
   .info-footer {
     padding-top: 30px;
     font-family: "GmarketSansMedium", sans-serif;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 10px;
     color: #a59f9f;
   }
 }
