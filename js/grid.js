@@ -15,10 +15,10 @@ const grid_info_members = [
   },
   {
     num: 3,
-    music: "?? - ??",
-    nick: "????",
+    music: "Love Never Felt So..",
+    nick: "갬성추구",
     name: "박서연",
-    comment: "여러분을 뵙게 되어 기쁩니다.",
+    comment: "최강 프론트 엔드 화이팅!",
   },
   {
     num: 4,
@@ -29,10 +29,10 @@ const grid_info_members = [
   },
   {
     num: 5,
-    music: "?? - ??",
-    nick: "????",
+    music: "Mr. Lawrence - 류이..",
+    nick: "이상주의",
     name: "오연주",
-    comment: "여러분을 뵙게 되어 기쁩니다.",
+    comment: "재밋게 해봅시다아",
   },
   {
     num: 6,
@@ -86,11 +86,11 @@ const grid_info_members_mobile = [
   {
     num: 3,
     name: "박서연",
-    key1: "# 전전",
+    key1: "# 아창",
     key2: "# 카이퍼",
     key3: "# 🐑",
-    music: "music",
-    comment: "여러분을 뵙게 되어 기쁩니다.",
+    music: "Love Never Felt So Good - M..",
+    comment: "최강 프론트 엔드 화이팅!",
   },
   {
     num: 4,
@@ -105,10 +105,10 @@ const grid_info_members_mobile = [
     num: 5,
     name: "오연주",
     key1: "# 공시",
-    key2: "# RC",
+    key2: "# 카이퍼",
     key3: "# 💪",
-    music: "music",
-    comment: "여러분을 뵙게 되어 기쁩니다.",
+    music: "Mr. Lawrence - 류이치 사카모토",
+    comment: "재밋게 해봅시다아",
   },
   {
     num: 6,
