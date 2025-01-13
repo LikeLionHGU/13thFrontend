@@ -158,10 +158,18 @@ const grid_info_nick = document.querySelector(".grid-info-nick");
 const grid_info_name = document.querySelector(".grid-info-name");
 const grid_info_footer = document.querySelector(".grid-info-footer");
 
+function get_member() {
+  const member_num = grid_info_members[0].num;
+  const member_name = grid_info_members[0].name;
+  console.log(member_num, member_name);
+  localStorage.setItem(member_num, member_name);
+}
+
+
 const htmlString1 = grid_info_members
   .map(
     (member) => `
-      <div class="grid-member" onclick="alert('짜잔~~~!')">
+      <div class="grid-member" onclick="get_member();">
         <div class="grid-info-memoji-box">
             <img
                 class="grid-info-memoji"
@@ -211,7 +219,7 @@ const htmlString2 = grid_info_members_mobile
           <div class="grid-mobile-music-title">${member.music}</div>
           <div class="grid-mobile-music-icon-box">
             <img
-              class="grid-info-music-note"
+              class="grid-mobile-music-icon"
               src="./assets/img/grid/note.png"
               alt="note"
             />
@@ -224,7 +232,7 @@ const htmlString2 = grid_info_members_mobile
   .join("");
 
 window.onresize = function () {
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 700) {
     likelion_grid.innerHTML = htmlString2;
   } else {
     likelion_grid.innerHTML = htmlString1;
