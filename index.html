@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>멋사 13기 프론트엔드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/index.css" />
-  </head>
+  </head> 
   <body>
     <!-- Header 영역 -->
     <div id="likelion-header">
-      This is Header
-      <div id="header_logo">
-        <img src="./assets/img/likelion-header.jpg" alt="LikeLion-Logo" />
-    <!-- Header 영역 -->
-    <div id="likelion-header">
-      This is Header
-      <div id="header_logo">
-        <img src="./assets/img/likelion-header.jpg" alt="LikeLion-Logo" />
-        <a href="#">LikeLion Frontend</a>
-      </div>
+      <span id="header_logo">
+        <a href="#"><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo" />
+         <span id="header-text">I <span class="memory--heart"></span> FRONTEND</span>
+        </a>
+      </span>
+      <span id="header-home">HOME</span>
+      <span id="header-about">ABOUT</span>
+      <span id="header-contact">CONTACT</span>
     </div>
 
     <!-- Grid 영역 -->
@@ -32,5 +33,6 @@
     <div id="footer">
       <div style="color:#0D1C3C">This is Footer</div>
     </div>
+    <script src="./js/grid.js"></script>
   </body>
 </html>
