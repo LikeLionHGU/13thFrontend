@@ -1,0 +1,280 @@
+#likelion_grid {
+  background-color: #f9c756;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+
+  .grid-member {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    background-color: #0d1c3c;
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+
+    cursor: pointer;
+    box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+  }
+
+  .grid-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-member:active {
+    box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  .grid-info-box {
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: white;
+    width: auto;
+    height: 200px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+  }
+
+  .grid-info-memoji {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .grid-info-memoji-box {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 25px;
+  }
+
+  .grid-info-music-box {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid #36c038;
+    border-radius: 20px;
+    width: 150px;
+  }
+
+  .grid-info-music-box span {
+    font-size: smaller;
+  }
+
+  .grid-info-music-note {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+  }
+
+  .grid-info-nick {
+    padding-top: 20px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .grid-info-name {
+    padding-top: 10px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .grid-info-footer {
+    padding-top: 30px;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 10px;
+    color: #a59f9f;
+  }
+}
+
+.grid-footer {
+  padding-bottom: 100px;
+}
+
+/*모바일 버전 */
+
+.grid-mobile-member {
+  width: 800px;
+  border: 1px outset #0d1c3c;
+  border-radius: 20px;
+  display: flex;
+  flex: 1; /*각 칸들이 동일한 비율 유지하도록 하는 기능*/
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.grid-mobile-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+.grid-mobile-member:active {
+  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
+}
+
+/*프로필 사진*/
+.grid-mobile-pic-box {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 6px;
+  padding: 0%;
+  background: white;
+  border: 1px solid #0d1c3c;
+  border-radius: 50%;
+}
+.grid-mobile-pic {
+  width: 50px;
+  height: 50px;
+}
+/*이름*/
+.grid-mobile-name {
+  font-family: "GmarketSansMedium";
+  color: #0d1c3c;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 3%;
+  text-align: left;
+}
+/*키워드*/
+.grid-mobile-keyword {
+  width: 60px;
+  height: 15px;
+  background: #0d1c3c;
+  border-radius: 104.59px;
+  margin-left: 2px;
+  color: white;
+  font-family: "GmarketSansMedium";
+  font-size: 12px;
+  text-align: center;
+}
+/*키워드들 묶는 클래스*/
+.grid-member-info {
+  display: flex;
+  flex-direction: row;
+}
+/*음악 박스*/
+.grid-mobile-music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 220px;
+  height: 30px;
+  background: beige;
+  border: 1px solid #36c038;
+  border-radius: 104.59px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 15px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+/*음악 제목*/
+.grid-mobile-music-title {
+  font-family: "GmarketSansMedium";
+  font-size: 10px;
+  color: #0d1c3c;
+}
+/*플레이 버튼*/
+.grid-mobile-music-icon {
+  height: 17px;
+  width: 17px;
+  vertical-align: sub;
+}
+
+
+/* hover 말풍선 */
+.grid-member p {
+  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
+  background-color: white;
+  width: 200px;
+  color: black;
+  top: -100px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
+  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
+  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
+  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
+
+  visibility: hidden;
+
+  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.grid-member p:after {
+  content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
+  position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -10px;
+  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
+  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
+}
+
+.grid-member:hover p {
+  opacity: 1;
+  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
+  box-shadow: 0 5px 50px 12px rgba(0, 0, 0, 0.4);
+}
+
+.grid-mobile-member p {
+  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
+  background-color: white;
+  width: 200px;
+  color: black;
+  top: -65px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
+  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
+  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
+  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
+
+  visibility: hidden;
+
+  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.grid-mobile-member p:after {
+  content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
+  position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -5px;
+  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
+  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
+}
+
+.grid-mobile-member:hover p {
+  opacity: 1;
+  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
+  box-shadow: 0 -15px 50px 10px rgba(0, 0, 0, 0.4);
+}
