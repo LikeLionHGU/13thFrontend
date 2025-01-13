@@ -19,3 +19,13 @@ const mobBot = document.querySelector("#header-mob_bot");
 mobTop.onclick = () => goToScroll(mobTop);
 mobAbout.onclick = () => goToScroll(mobAbout);
 mobBot.onclick = () => goToScroll(mobBot);
+
+function getRandomColor() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+}
+
+document.getElementById("heart").addEventListener("click", function () {
+  const randomColor = getRandomColor();
+  const path = this.querySelector("path");
+  path.setAttribute("fill", randomColor); 
+});
