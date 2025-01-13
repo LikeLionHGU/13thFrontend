@@ -1,4 +1,4 @@
-const grid_info_members = [
+const grid_info_members_versionM = [
   {
     num: 1,
     music: "찬란",
@@ -127,7 +127,7 @@ const grid_info_members = [
   },
 ];
 
-const grid_info_members_mobile = [
+const grid_info_members_mobile_versionM = [
   {
     num: 1,
     name: "김원진",
@@ -275,11 +275,11 @@ const grid_info_members_mobile = [
 ];
 
 const modal = document.querySelector(".modal");
-const btnOpenModal = document.querySelector(".btn-open-modal");
+// const btnOpenModal = document.querySelector(".btn-open-modal");
 
-btnOpenModal.addEventListener("click", () => {
-  modal.style.display = "flex";
-});
+// btnOpenModal.addEventListener("click", () => {
+//   modal.style.display = "flex";
+// });
 /*
   modal
     .querySelector(".modal_profile_picture > img")
@@ -303,8 +303,12 @@ function openModal(memberData) {
   modal.style.display = "flex";
 }
 
-function closeModal() {
-  document.body.style.display = "none";
-  document.body.style.overflow = "auto";
-}
 */
+
+const modalCloseBtn = document.querySelector(".modal_close_btn");
+modalCloseBtn.addEventListener("click", () => {
+  // const modal = document.querySelector(".modal");
+  modal.style.display = "none";
+  modal.style.overflow = "auto";
+  console.log("AA");
+});
