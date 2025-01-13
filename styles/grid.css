@@ -277,5 +277,6 @@
   #likelion_grid {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* 자동 줄바꿈 */
   }
 }
