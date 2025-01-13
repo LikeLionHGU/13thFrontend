@@ -4,7 +4,7 @@
     '>' : 직접적인 자식 요소일 때만 스타일을 적용하고 싶을 때 사용
     만약 모든 하위 요소 중에서 #header_logo를 선택하고 싶다면 >를 생략
   */
-  
+  z-index: 1500;
   display: flex;
   flex-direction: row;
 
