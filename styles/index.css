@@ -63,6 +63,7 @@ body {
   right: 2%;
   bottom: 0;
   display: block;
+  cursor: pointer;
 
   img{
     width:50px;
@@ -78,6 +79,7 @@ body {
 #header-home, #header-about, #header-contact {
   padding-left: 30px; 
   font-size: 40px;
+  cursor: pointer;
 }
 
 #likelion-header a {

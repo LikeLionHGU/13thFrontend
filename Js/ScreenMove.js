@@ -1,6 +1,6 @@
-const home = document.querySelector(".header-home");
-const about = document.querySelector(".header-about");
-const contact = document.querySelector(".header-contact");
+const home = document.querySelector("#header-home");
+const about = document.querySelector("#header-about");
+const contact = document.querySelector("#header-contact");
 
 function goToScroll(name) {
   let location = name.offsetTop;
@@ -8,9 +8,15 @@ function goToScroll(name) {
   console.log(`I am ${name}`);
 }
 
-home.onclick = () => goToScroll(home);
-about.onclick = () => goToScroll(about);
-contact.onclick = () => goToScroll(contact);
+// home.onclick = () => goToScroll(home);
+// about.onclick = () => goToScroll(about);
+// contact.onclick = () => goToScroll(contact);
+
+const header = document.querySelector("#likelion-header");
+
+home.addEventListener("click", () => window.scrollTo(1000, 1000));
+about.addEventListener("click", () => goToScroll(about));
+contact.addEventListener("click", () => goToScroll(contact));
 
 const mobTop = document.querySelector("#mob_top");
 const mobAbout = document.querySelector("#mob_about");
