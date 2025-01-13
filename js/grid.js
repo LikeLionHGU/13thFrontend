@@ -153,7 +153,7 @@ const likelion_grid = document.getElementById("likelion_grid");
 const htmlString1 = grid_info_members
   .map(
     (member) => `
-      <div class="grid-member" onclick="alert('짜잔~~~!')">
+      <div class="grid-member" onclick="saveMemberNum('${member.num}')">
         <div class="grid-info-memoji-box">
             <img
                 class="grid-info-memoji"
@@ -183,7 +183,9 @@ const htmlString1 = grid_info_members
 
 const htmlString2 = grid_info_members_mobile
   .map(
-    (member) => `<div class="grid-mobile-member" onclick="alert('짜잔~~~!')">
+    (
+      member
+    ) => `<div class="grid-mobile-member" onclick="saveMemberNum('${member.num}')">
         <div class="grid-mobile-pic-box">
           <img
             class="grid-mobile-pic"
@@ -224,3 +226,8 @@ window.onresize = function () {
 };
 
 window.onresize();
+
+function saveMemberNum(memberNum) {
+  console.log("member", memberNum);
+  window.localStorage.setItem("num", memberNum);
+}
