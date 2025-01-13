@@ -195,7 +195,7 @@ const htmlString2 = grid_info_members_mobile
         <div class="grid-mobile-pic-box">
           <img
             class="grid-mobile-pic"
-            src="./assets/img/grid/memoji/memoji${member.num}.png"
+            src="./assets/img/grid/memoji/${member.num}.png"
             alt="memoji"
           />
         </div>
