@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  background-color: #0f1b2b;
+  color: #e7c986;
+}
+
+.banner {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.top-circle {
+  position: absolute;
+  top: 500;
+  left: 0;
+  width: 800px;
+  height: 80px;
+  background-color: #f4cb69;
+  clip-path: path("M0,80 Q400,0 800,80 L800,0 L0,0 Z");
+  border-bottom-right-radius: 500px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.branding {
+  flex: 3;
+  min-width: 300px;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.links {
+  flex: 1.4;
+  min-width: 280px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.join-us ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+}
+
+.join-us li img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.join-us li img:hover {
+  transform: scale(1.1);
+}
+
+.branding h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.learn-more h3,
+.join-us h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f4cb69;
+}
+
+.branding p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #e7c986;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.likelion-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-top: 80px; /* 여기서 값 조정하여 아래로 이동 */
+}
+
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
