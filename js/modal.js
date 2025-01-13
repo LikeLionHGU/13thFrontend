@@ -1,133 +1,119 @@
+
 const grid_info_members_versionM = [
+
   {
     num: 1,
     music: "찬란",
     artist: "나상현씨밴드",
-    nick: "시크도도",
     name: "김원진",
-    comment: "잘 부탁드립니다!!",
     motto: "",
-    insta: "https://www.instagram.com/kinnwonjin/",
     github: "https://github.com/lingard09",
     prl: "https://lingard09.github.io/Profile_Page/",
-    profile: "/image/img/김원진.jpg",
-    bgImage: "image//bgImage/김원진.jpeg",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "./assets/img/modal/memoji/1.jpg",
+    bgImage: "./assets/img/modal/backgroundImage/1.JPEG",
   },
   {
     num: 2,
     music: "밝은 빛이 가득해",
     artist: "WELOVE",
-    nick: "생긋생긋",
     name: "김윤채",
-    comment: "멋사 파이팅!",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 3,
     music: "Love Never Felt So Good",
     artist: "",
-    nick: "갬성추구",
     name: "박서연",
-    comment: "최강 프론트 엔드 화이팅!",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 4,
     music: "HAPPY",
     artist: "데이식스",
-    nick: "편한덤벙",
     name: "성하은",
-    comment: "13기 아기사자 화이팅!",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 5,
     music: "Mr. Lawrence",
     artist: "류이치 사카모토",
-    nick: "이상주의",
     name: "오연주",
-    comment: "재밋게 해봅시다아",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 6,
     music: "Antifreeze",
     artist: "검정치마",
-    nick: "커커커몬",
     name: "이재호",
-    comment: "전 멋사 진짜 좋은 것 같아요.",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 7,
     music: "FREEDOM",
     artist: "AKMU",
-    nick: "느린재미",
     name: "이하린",
-    comment: "13기 뿁!",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 8,
     music: "Day n nite",
     artist: "문수진",
-    nick: "나무늘보",
     name: "진희원",
-    comment: "낯을 많이 가리지만 친해지면 재밌습니다.",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
   {
     num: 9,
     music: "나무",
     artist: "카더가든",
-    nick: "차분여유",
     name: "한규호",
-    comment: "모두들 화이팅!",
     motto: "",
-    insta: "",
-    github: "",
-    prl: "",
-    profile: "",
-    bgImage: "",
+    github: "https://github.com/lingard09",
+    prl: "https://lingard09.github.io/Profile_Page/",
+    insta: "https://www.instagram.com/kinnwonjin/",
+    profile: "/image/img/김원진.jpg",
+    bgImage: "image//bgImage/김원진.jpeg",
   },
 ];
 
+
 const grid_info_members_mobile_versionM = [
+
   {
     num: 1,
     name: "김원진",
@@ -272,14 +258,49 @@ const grid_info_members_mobile_versionM = [
     profile: "",
     bgImage: "",
   },
-];
+];*/
 
 const modal = document.querySelector(".modal");
 // const btnOpenModal = document.querySelector(".btn-open-modal");
 
+
 // btnOpenModal.addEventListener("click", () => {
 //   modal.style.display = "flex";
 // });
+=======
+// btnOpenModal.addEventListener("click", () => {
+//   modal.style.display = "flex";
+//   console.log("hl");
+// });
+
+// const musicName = document.getElementById("modal_music_name");
+// const musicSinger = document.getElementById("modal_music_singer");
+// const profilePic = document.getElementById("modal_profile_pic");
+// const profileName = document.getElementById("modal_profile_name");
+// const profileMotto = document.getElementById("modal_profile_motto");
+// const githubLink = document.getElementById("modal_github");
+// const prLink = document.getElementById("modal_introduce");
+// const instaLink = document.getElementById("modal_insta");
+// //배경
+                                        
+
+
+// function getMemberNum(){
+//   const selectMemberNumber = localStorage.getItem('num');
+//   const showMember = memberData[selectMemberNumber-1];
+//   console.log("showMember", showMember);
+// }
+// musicName.innerText = showMember.music;
+// musicSinger.innerText = showMember.artist;
+// profilePic.src=showMember.profile;
+// profileName.innerText = showMember.name;
+// profileMotto.innerText = showMember.motto;
+// githubLink.src = showMember.github;
+// prLink.src = showMember.prl;
+// instaLink.src = showMember.insta;
+// 배경
+
+
 /*
   modal
     .querySelector(".modal_profile_picture > img")
