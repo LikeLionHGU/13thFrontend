@@ -45,3 +45,9 @@ body {
   }
 }
 
+#footer {
+  border: 1px solid slategrey;
+  width: 100%;
+  padding: 50px;
+  height: 50px;
+}
