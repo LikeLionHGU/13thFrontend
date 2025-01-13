@@ -1,76 +1,72 @@
 #likelion_grid {
-  background-color: #f9c756;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* 자동 줄바꿈 */
   justify-content: center;
   padding: 50px;
+  background-color: #f9c756;
 
+  /* 멤버 카드 */
   .grid-member {
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: auto;
+    width: 250px;
+    height: auto;
+    margin: 50px 30px auto 30px;
     background-color: #0d1c3c;
     border-radius: 20px;
-    width: 200px;
-    height: auto;
-    text-align: center;
-
-    cursor: pointer;
     box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
     transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
   }
 
   .grid-member:hover {
-    transform: translateY(-5px);
     box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
   }
 
+  /* 클릭했을 때 효과주기 */
   .grid-member:active {
     box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
   }
 
+  /* 상세정보를 담는 박스 */
   .grid-info-box {
+    /* position: relative; */
+    width: auto;
+    height: 200px;
     padding-top: 10px;
     margin-top: 20px;
     background-color: white;
-    width: auto;
-    height: 200px;
-
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
+    border-radius: 0px 0px 20px 20px;
   }
 
-  .grid-info-memoji {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-  }
-
+  /* 미모지를 담는 이미지 박스 */
   .grid-info-memoji-box {
-    background-color: white;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 0px auto;
+    background-color: white;
+    border-radius: 50%; /* 둥글게 만들기 위함 */
   }
 
+  /* 미모지 */
+  .grid-info-memoji {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* 노래가 담겨있는 박스 */
   .grid-info-music-box {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 10px;
     padding: 5px;
     border: 2px solid #36c038;
     border-radius: 20px;
-    width: 150px;
   }
 
+  /* 노래 제목 */
   .grid-info-music-box span {
-    font-size: smaller;
+    font-size: 12px;
+    font-family: "GmarketSansMedium";
   }
 
   .grid-info-music-note {
@@ -81,7 +77,7 @@
   }
 
   .grid-info-nick {
-    padding-top: 20px;
+    margin-top: 20px;
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -102,10 +98,48 @@
   }
 }
 
-.grid-footer {
-  padding-bottom: 100px;
+/* hover 말풍선 */
+.grid-member p {
+  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
+  background-color: white;
+  color: black;
+  top: -100px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
+  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
+  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
+  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
+
+  visibility: hidden;
+
+  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
 }
 
+.grid-member p:after {
+  content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
+  position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -10px;
+  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
+  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
+}
+
+.grid-member:hover p {
+  opacity: 1;
+  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
+  box-shadow: 0 5px 50px 12px rgba(0, 0, 0, 0.4);
+}
+
+/*모바일 버전 */
+/*모바일 버전 */
+/*모바일 버전 */
 /*모바일 버전 */
 
 .grid-mobile-member {
@@ -201,45 +235,6 @@
   width: 15px;
   padding-left: auto;
   vertical-align: sub;
-}
-
-/* hover 말풍선 */
-.grid-member p {
-  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
-  background-color: white;
-  color: black;
-  top: -100px;
-  width: 250px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 30px;
-  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
-  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
-  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
-  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
-
-  visibility: hidden;
-
-  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
-}
-
-.grid-member p:after {
-  content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
-  position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg) translateX(-50%);
-  bottom: -10px;
-  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
-  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
-}
-
-.grid-member:hover p {
-  opacity: 1;
-  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
-  box-shadow: 0 5px 50px 12px rgba(0, 0, 0, 0.4);
 }
 
 .grid-mobile-member p {
