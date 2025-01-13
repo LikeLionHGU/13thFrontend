@@ -12,9 +12,9 @@ home.onclick = () => goToScroll(home);
 about.onclick = () => goToScroll(about);
 contact.onclick = () => goToScroll(contact);
 
-const mobTop = document.querySelector("#mob_top");
-const mobAbout = document.querySelector("#mob_about");
-const mobBot = document.querySelector("#mob_bot");
+const mobTop = document.querySelector("#header-mob_top");
+const mobAbout = document.querySelector("#header-mob_about");
+const mobBot = document.querySelector("#header-mob_bot");
 
 mobTop.onclick = () => goToScroll(mobTop);
 mobAbout.onclick = () => goToScroll(mobAbout);

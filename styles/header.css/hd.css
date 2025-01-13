@@ -22,8 +22,9 @@
   
     position: sticky;
     top: 1px;
+}
   
-    > #header-padding {
+    #header-padding {
       padding: 30px;
     }
   
@@ -36,67 +37,74 @@
       }
     }
   
-    #header_text {
-      display: inline-block;
-    }
-  }
-  
-  #navigation {
+  #header_text {
     display: inline-block;
-    position: absolute;
-    right: 50px;
-    top: 35px;
   }
-  
-  @media screen and (max-width: 749px){
-    #navigation {
-      display: none;
-    }
+
+
+#header_navigation {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+
+
+.header-mobile-nav {
+  position: fixed;
+  right: 2%;
+  bottom: 0;
+  display: inline-block;
+}
+  img{
+    width:50px;
   }
-  
-  .mobile-nav {
-    position: fixed;
-    right: 2%;
-    bottom: 0;
-    display: block;
-  
-    img{
-      width:50px;
-    }
-  }
-  
-  @media screen and (min-width: 750px){
-    .mobile-nav {
-      display: none;
-    }
-  }
-  
-  .header-home, .header-about, .header-contact {
-    padding: 0 30px 0 30px; 
-    font-family: "Jersey 10";
-    background-color: #0D1C3C;
-    color: #F9C756;
-    border: none;
-    outline: none;
-    font-size: 40px;
-  }
-  .header-home:hover, .header-about:hover, .header-contact:hover{
-    cursor: pointer;
-    background-color: #F9C756;
-    color: #0D1C3C;
-    border-radius: 15px;
-  }
-  
-  .header-contact{
-    padding: 0 20px 0 20px;
-  }
-  
-  #likelion-header a {
-    color: #F9C756;
-  }
+
+.header-home, .header-about, .header-contact {
+  padding: 0 30px 0 30px; 
+  font-family: "Jersey 10";
+  background-color: #0D1C3C;
+  color: #F9C756;
+  border: none;
+  outline: none;
+  font-size: 40px;
+}
+.header-home:hover, .header-about:hover, .header-contact:hover{
+  cursor: pointer;
+  background-color: #F9C756;
+  color: #0D1C3C;
+  border-radius: 15px;
+}
+
+.header-contact{
+  padding: 0 20px 0 20px;
+}
+
+#likelion-header a {
+  color: #F9C756;
+}
   
   #likelion-header a:link {
     color: #F9C756;
     background-color: transparent;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 749px) {
+    #header_navigation {
+      display: none;
+    }
+    .header-mobile-nav {
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (min-width: 750px) {
+    #header_navigation {
+      display: inline-block;
+    }
+    .header-mobile-nav {
+      display: none;
+    }
+  }
+  
