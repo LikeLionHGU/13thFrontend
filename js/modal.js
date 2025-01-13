@@ -261,7 +261,7 @@ const btnOpenModal = document.querySelector(".btn-open-modal");
 
 btnOpenModal.addEventListener("click", () => {
   modal.style.display = "flex";
-  console.log("hl");
+  getMemberNum();
 });
 
 const musicName = document.getElementById("modal_music_name");
@@ -280,15 +280,15 @@ function getMemberNum(){
   const selectMemberNumber = localStorage.getItem('num');
   const showMember = memberData[selectMemberNumber-1];
   console.log("showMember", showMember);
+  musicName.innerText = showMember.music;
+  musicSinger.innerText = showMember.artist;
+  profilePic.src = showMember.profile;
+  profileName.innerText = showMember.name;
+  profileMotto.innerText = showMember.motto;
+  githubLink.src = showMember.github;
+  prLink.src = showMember.prl;
+  instaLink.src = showMember.insta;
 }
-musicName.innerText = showMember.music;
-musicSinger.innerText = showMember.artist;
-profilePic.src=showMember.profile;
-profileName.innerText = showMember.name;
-profileMotto.innerText = showMember.motto;
-githubLink.src = showMember.github;
-prLink.src = showMember.prl;
-instaLink.src = showMember.insta;
 // 배경
 
 /*
