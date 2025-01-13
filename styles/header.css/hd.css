@@ -44,7 +44,7 @@
   #header_text {
     display: inline-block;
   }
-}
+
 
 #header_navigation {
   display: inline-block;
@@ -53,14 +53,13 @@
   top: 35px;
 }
 
-}
 
 .header-mobile-nav {
   position: fixed;
   right: 2%;
   bottom: 0;
   display: block;
-
+}
   img{
     width:50px;
 
