@@ -56,8 +56,15 @@ right: 2%;
 bottom: 0;
 display: inline-block;
 }
+
 img{
   width:50px;
+  transform: scale(1.0);
+}
+
+.header-mobile-nav img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .header-home, .header-about, .header-contact {
