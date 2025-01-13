@@ -41,7 +41,7 @@
   }
 }
 
-#navigation {
+#header_navigation {
   display: inline-block;
   position: absolute;
   right: 50px;
@@ -54,7 +54,7 @@
   }
 }
 
-.mobile-nav {
+.header-mobile-nav {
   position: fixed;
   right: 2%;
   bottom: 0;
@@ -70,6 +70,7 @@
     display: none;
   }
 }
+
 
 .header-home, .header-about, .header-contact {
   padding: 0 30px 0 30px; 
