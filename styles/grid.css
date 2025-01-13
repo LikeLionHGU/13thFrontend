@@ -4,19 +4,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
 
   .grid-member {
     margin-top: 50px;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 100px;
+    margin-bottom: auto;
     background-color: #0d1c3c;
     border-radius: 20px;
     width: 200px;
     height: auto;
     text-align: center;
-    padding-top: 20px;
 
     cursor: pointer;
     box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
@@ -56,7 +55,9 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-left: 25px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .grid-info-music-box {
@@ -202,13 +203,13 @@
   vertical-align: sub;
 }
 
-
 /* hover 말풍선 */
 .grid-member p {
   position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
   background-color: white;
   color: black;
   top: -100px;
+  width: 250px;
   text-align: center;
   padding: 20px;
   border-radius: 30px;
