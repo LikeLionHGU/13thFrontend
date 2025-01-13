@@ -258,10 +258,10 @@ const memberData = [
 
 const modal = document.querySelector(".modal");
 const btnOpenModal = document.querySelector(".btn-open-modal");
-console.log("hl");
 
 btnOpenModal.addEventListener("click", () => {
   modal.style.display = "flex";
+  console.log("hl");
 });
 
 const musicName = document.getElementById("modal_music_name");
