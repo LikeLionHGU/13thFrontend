@@ -1,9 +1,9 @@
-const modal = document.querySelector('.modal');
-        const btnOpenModal=document.querySelector('.btn-open-modal');
+const modal = document.querySelector(".modal");
+const btnOpenModal = document.querySelector(".btn-open-modal");
 
-        btnOpenModal.addEventListener("click", ()=>{
-            modal.style.display="flex";
-        });
+btnOpenModal.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
 
 // const info_members = [
 //   {
@@ -66,12 +66,13 @@ const modal = document.querySelector('.modal');
 //   },
 // ];
 
-
 // const connect = document.querySelector("#modal_music_name");
 
 // function handleTitleClick(){
-  
+
 //   connect.innerIext = info_members.music_name;
 // }
 
 // h1.addEventListener("click", handleTitleClick);
+
+//
