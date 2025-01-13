@@ -258,6 +258,7 @@ const memberData = [
 
 const modal = document.querySelector(".modal");
 const btnOpenModal = document.querySelector(".btn-open-modal");
+console.log("hl");
 
 btnOpenModal.addEventListener("click", () => {
   modal.style.display = "flex";
@@ -274,10 +275,12 @@ const instaLink = document.getElementById("modal_insta");
 //배경
                                         
 
-const selectMemberNumber = localStorage.getItem('num');
 
-const showMember = memberData[selectMemberNumber-1];
-
+function getMemberNum(){
+  const selectMemberNumber = localStorage.getItem('num');
+  const showMember = memberData[selectMemberNumber-1];
+  console.log("showMember", showMember);
+}
 musicName.innerText = showMember.music;
 musicSinger.innerText = showMember.artist;
 profilePic.src=showMember.profile;
