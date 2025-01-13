@@ -62,7 +62,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.modal_profile_picture {
+#modal_profile_picture {
   width: 100px;
   height: 100px;
 
