@@ -16,16 +16,90 @@ body {
     '>' : 직접적인 자식 요소일 때만 스타일을 적용하고 싶을 때 사용
     만약 모든 하위 요소 중에서 #header_logo를 선택하고 싶다면 >를 생략
   */
+  
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  padding: 50px;
+  flex-direction: row;
 
-  > #header_logo {
+  font-family: "Jersey 10";
+  font-weight: 400;
+  font-style: bold;
+  color: #F9C756;
+
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+
+  background: #0D1C3C;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  position: sticky;
+  top: 1px;
+
+  > #header-padding {
+    padding: 30px;
+  }
+
+  #header_logo {
+    font-size: 50px;
     img {
-      width: 100px;
+      width: 80px;
+      display: inline-block;
+      padding-right: 10px;
     }
   }
+
+  #header_text {
+    display: inline-block;
+  }
+}
+
+#navigation {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+
+@media screen and (max-width: 749px){
+  #navigation {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  right: 2%;
+  bottom: 0;
+  display: block;
+
+  img{
+    width:50px;
+  }
+}
+
+#heart path {
+  transition: fill 0.3s ease;
+}
+
+@media screen and (min-width: 750px){
+  .mobile-nav {
+    display: none;
+  }
+}
+
+#header-home, #header-about, #header-contact {
+  padding-left: 30px; 
+  font-size: 40px;
+}
+
+#likelion-header a {
+  color: #F9C756;
+}
+
+#likelion-header a:link {
+  color: #F9C756;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 #likelion-banner {
@@ -35,111 +109,9 @@ body {
   padding: 50px;
 }
 
-#likelion_grid {
-  border: 1px solid red;
-  background-color: #f9c756;
-  padding: 50px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .member {
-    margin-right: 50px;
-    margin-bottom: 100px;
-    background-color: #0d1c3c;
-    border-radius: 20px;
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    padding-top: 20px;
-
-    cursor: pointer;
-    box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
-  }
-
-  .member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
-  }
-
-  .member:active {
-    box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
-  }
-
-  .info-box {
-    padding-top: 10px;
-    margin-top: 20px;
-    background-color: white;
-    width: auto;
-    height: 200px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-  }
-
-  .info-memoji {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-  }
-
-  .info-memoji-box {
-    background-color: white;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 25px;
-  }
-
-  .info-music-box {
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 5px;
-    border: 2px solid #36c038;
-    border-radius: 20px;
-    width: 150px;
-  }
-
-  .info-music-box span {
-    font-size: smaller;
-  }
-
-  .info-music-note {
-    padding-right: 5px;
-    width: 20px;
-    height: 20px;
-    vertical-align: sub;
-  }
-
-  .info-nick {
-    padding-top: 20px;
-    font-family: "GmarketSansMedium", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  .info-name {
-    padding-top: 10px;
-    font-family: "GmarketSansMedium", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  .info-footer {
-    padding-top: 30px;
-    font-family: "GmarketSansMedium", sans-serif;
-    font-size: 10px;
-    color: #a59f9f;
-  }
-}
-
 #footer {
-  border: 1px solid slategrey;
+  background-color: #f9c756;
   width: 100%;
-  padding: 50px;
+  /* padding: 50px; */
   height: 50px;
 }
