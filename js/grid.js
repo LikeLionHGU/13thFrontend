@@ -8,14 +8,14 @@ const grid_info_members = [
   },
   {
     num: 2,
-    music: "밝은 빛이 가득해 - W..",
+    music: "밝은 빛이 가득해 - WELOVE",
     nick: "생긋생긋",
     name: "김윤채",
     comment: "멋사 파이팅!",
   },
   {
     num: 3,
-    music: "Love Never Felt So..",
+    music: "Love Never Felt So Good..",
     nick: "갬성추구",
     name: "박서연",
     comment: "최강 프론트 엔드 화이팅!",
@@ -29,14 +29,14 @@ const grid_info_members = [
   },
   {
     num: 5,
-    music: "Mr. Lawrence - 류이..",
+    music: "Mr. Lawrence - 류이치 사카..",
     nick: "이상주의",
     name: "오연주",
     comment: "재밋게 해봅시다아",
   },
   {
     num: 6,
-    music: "Antifreeze - 검정치..",
+    music: "Antifreeze - 검정치마",
     nick: "커커커몬",
     name: "이재호",
     comment: "전 멋사 진짜 좋은 것 같아요.",
