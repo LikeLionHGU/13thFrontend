@@ -279,10 +279,15 @@
     flex-direction: row;
     flex-wrap: wrap; /* 자동 줄바꿈 */
     padding: 10px;
+
     .grid-member {
       flex: 1;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .grid-mobile-keyword {
+        padding: 5px 0px 5px 0px;
     }
   }
 }

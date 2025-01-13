@@ -89,7 +89,7 @@ const grid_info_members_mobile = [
     key1: "# 아창",
     key2: "# 카이퍼",
     key3: "# 🐑",
-    music: "Love Never Felt So Good - M..",
+    music: "Love Never Felt So Good - Michael Jackson",
     comment: "최강 프론트 엔드 화이팅!",
   },
   {
