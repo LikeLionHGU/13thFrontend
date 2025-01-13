@@ -105,7 +105,7 @@ const grid_info_members_mobile = [
     num: 5,
     name: "오연주",
     key1: "# 공시",
-    key2: "# 카이퍼",
+    key2: "# 손양원",
     key3: "# 💪",
     music: "Mr. Lawrence - 류이치 사카모토",
     comment: "재밋게 해봅시다아",
@@ -148,7 +148,15 @@ const grid_info_members_mobile = [
   },
 ];
 
-const likelion_grid = document.getElementById("likelion_grid");
+const likelion_grid = document.querySelector("#likelion_grid");
+const grid_member = document.querySelector(".grid-member");
+const grid_info_memoji_box = document.querySelector(".grid-info-memoji-box");
+const grid_info_box = document.querySelector(".grid-info-box");
+const grid_info_music_box = document.querySelector(".grid-info-music-box");
+const grid_info_music = document.querySelector(".grid-info-music-box span");
+const grid_info_nick = document.querySelector(".grid-info-nick");
+const grid_info_name = document.querySelector(".grid-info-name");
+const grid_info_footer = document.querySelector(".grid-info-footer");
 
 const htmlString1 = grid_info_members
   .map(
@@ -157,7 +165,7 @@ const htmlString1 = grid_info_members
         <div class="grid-info-memoji-box">
             <img
                 class="grid-info-memoji"
-                src="./assets/img/grid/memoji/memoji${member.num}.png"
+                src="./assets/img/grid/memoji/${member.num}.png"
                 alt="memoji"
             />
         </div>
