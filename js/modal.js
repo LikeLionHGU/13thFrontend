@@ -54,7 +54,7 @@ const memberData = [
     name: "오연주",
     motto: "그래도 해야지 어떡해",
     github: "https://github.com/playoh",
-    prl: "https://lingard09.github.io/Profile_Page/",
+    prl: "https://playoh.github.io/profile_page/",
     insta: "https://www.instagram.com/play0h/",
     profile: "./assets/img/modal/memoji/5.png",
     bgImage: "./assets/img/modal/backgroundImage/5.PNG",
@@ -289,6 +289,29 @@ function getMemberNum(){
   prLink.href = showMember.prl;
   instaLink.href = showMember.insta;
 }
+
+const modalNode = document.querySelector("div.modal");
+
+const modalCloseBtn = document.querySelector(".modal_close_btn");
+modalCloseBtn.addEventListener("click", () => {
+  // const modal = document.querySelector(".modal");
+  modal.style.display = "none";
+  modal.style.overflow = "auto";
+  console.log("AA");
+});
+
+//모달이 아닌 곳을 클릭하면 모달 닫힘
+function closeModal() {
+  modalNode.body.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+window.addEventListener("click", (e) => {
+  e.target === modalNode
+    ? ((modalNode.style.display = "none"),
+      (document.body.style.overflow = "auto"))
+    : false;
+});
 // 배경
 
 /*
