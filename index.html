@@ -10,25 +10,61 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/header.css/hd.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
     <!-- Header 영역 -->
     <div id="likelion-header">
-      <span id="header_logo">
-        <a href="#"
-          ><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo" />
+      <span id="header-padding">
+        <span id="header_logo">
+          <a href="index.html"
+            ><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo"
+          /></a>
           <span id="header-text"
-            >I <span class="memory--heart"></span>FRONTEND</span
+            >I
+            <svg
+              id="heart"
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="33"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fb0000"
+                d="M21.19 12.683c-2.5 5.41-8.62 8.2-8.88 8.32a.85.85 0 0 1-.62 0c-.25-.12-6.38-2.91-8.88-8.32c-1.55-3.37-.69-7 1-8.56a4.93 4.93 0 0 1 4.36-1.05a6.16 6.16 0 0 1 3.78 2.62a6.15 6.15 0 0 1 3.79-2.62a4.93 4.93 0 0 1 4.36 1.05c1.78 1.56 2.65 5.19 1.09 8.56"
+              />
+            </svg>
+            FRONTEND</span
           >
-        </a>
+        </span>
+        <span id="header_navigation">
+          <button class="header-home">HOME</button>
+          <button class="header-about">ABOUT</button>
+          <button class="header-contact">CONTACT</button>
+        </span>
       </span>
-      <span id="header-home">HOME</span>
-      <span id="header-about">ABOUT</span>
-      <span id="header-contact">CONTACT</span>
-      <button class="btn-open-modal">Modal열기</button>
+    </div>
+    <div class="header-mobile-nav">
+      <div id="header-mob_top">
+        <img src="./assets/img/mob_nav_top.png" alt="mobile navigation top" />
+      </div>
+      <div id="header-mob_about">
+        <img
+          src="./assets/img/mob_nav_about.png"
+          alt="mobile navigation about"
+        />
+      </div>
+      <div id="header-mob_bot">
+        <img
+          src="./assets/img/mob_nav_bot.png"
+          alt="mobile navigation bottom"
+        />
+      </div>
     </div>
 
     <!-- Grid 영역 -->
@@ -37,7 +73,6 @@
     <!-- Modal 영역 -->
     <div class="modal" style="display: none">
       <div class="modal_body">
-
         <button class="modal_close_btn">x</button>
 
         <div class="modal_music">
@@ -55,19 +90,28 @@
         <div class="modal_link_box_row">
           <div class="modal_link_box_col">
             <a href="https://www.instagram.com/harlo_ii/"
-              ><img src="./assets/img/modal/github.png" class="modal_link_pic" id="modal_github"
+              ><img
+                src="./assets/img/modal/github.png"
+                class="modal_link_pic"
+                id="modal_github"
             /></a>
             <p>github</p>
           </div>
           <div class="modal_link_box_col">
             <a href="https://www.instagram.com/harlo_ii/"
-              ><img src="./assets/img/modal/link.png" class="modal_link_pic" id="modal_introduce"
+              ><img
+                src="./assets/img/modal/link.png"
+                class="modal_link_pic"
+                id="modal_introduce"
             /></a>
             <p>intoduce</p>
           </div>
           <div class="modal_link_box_col">
             <a href="https://www.instagram.com/harlo_ii/"
-              ><img src="./assets/img/modal/insta.png" class="modal_link_pic" id="modal_insta"
+              ><img
+                src="./assets/img/modal/insta.png"
+                class="modal_link_pic"
+                id="modal_insta"
             /></a>
             <p>instagram</p>
           </div>
@@ -75,12 +119,82 @@
       </div>
     </div>
     <!-- Footer 영역 -->
-    <div id="footer">
-      <div style="color: #0d1c3c">This is Footer</div>
+    <div id="footer"></div>
+    <div class="top-circle"></div>
+    <div class="container">
+      <img
+        src="./assets/img/likelion-header.png"
+        alt="likelion-header"
+        class="likelion-logo"
+      />
+      <div class="branding">
+        <h1>멋쟁이사자처럼</h1>
+        <p>한동대 멋사 13기 프론트엔드 컨셉: "깔끔함"</p>
+        <p>
+          이번 프로젝트는 한동대 멋사 프론트엔드의 활기찬 현재와 창창한 미래를
+          보여주는 것을 목표로 합니다.
+        </p>
+        <p>
+          단순한 서비스 제공을 넘어, 사용자가 더 나은 일상을 경험할 수 있도록
+          돕는 데 초점을 맞췄습니다.
+        </p>
+        <p>
+          프론트엔드 팀은 깔끔하고 간결적인 화면을 통해 프로젝트의 핵심 메시지를
+          사용자에게 명확히 전달하려고 합니다.
+        </p>
+      </div>
+
+      <div class="links">
+        <div class="learn-more">
+          <h3>Learn more</h3>
+          <ul>
+            <li>
+              <a href="https://hgulikelion.web.app" target="_blank"
+                >https://hgulikelion.web.app</a
+              >
+            </li>
+            <li>
+              <a href="https://likelion.net" target="_blank"
+                >https://likelion.net</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@likelion.official"
+                target="_blank"
+                >https://www.youtube.com/@likelion.official</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="join-us">
+          <h3>Join us</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/LikeLionHGU" target="_blank">
+                <img src="./assets/img/github.png" alt="GitHub" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contact@likelion.net" target="_blank">
+                <img src="./assets/img/email.png" alt="Email" />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/likelion_hgu" target="_blank">
+                <img src="./assets/img/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <script src="./Js/modal.js"></script>
+    <script src="./Js/heartAnimation.js"></script>
+    <script src="./Js/ScreenMove.js"></script>
     <script src="./Js/grid.js"></script>
 
+    <script src="./Js/modal.js"></script>
   </body>
 </html>

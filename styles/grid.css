@@ -1,99 +1,101 @@
 #likelion_grid {
-  background-color: #f9c756;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
+  background-color: #f9c756;
 
+  /* 멤버 카드 */
   .grid-member {
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 100px;
+    width: 250px;
+    height: auto;
+    margin: 50px 30px auto 30px;
     background-color: #0d1c3c;
     border-radius: 20px;
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    padding-top: 20px;
-
-    cursor: pointer;
     box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
     transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
   }
 
   .grid-member:hover {
-    transform: translateY(-5px);
     box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
   }
 
+  /* 클릭했을 때 효과주기 */
   .grid-member:active {
     box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
   }
 
+  /* 상세정보를 담는 박스 */
   .grid-info-box {
-    padding-top: 10px;
-    margin-top: 20px;
-    background-color: white;
     width: auto;
     height: 200px;
-
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-  }
-
-  .grid-info-memoji {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-  }
-
-  .grid-info-memoji-box {
+    margin-top: 20px;
+    padding-top: 10px;
     background-color: white;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 25px;
+    border-radius: 0px 0px 20px 20px;
   }
 
-  .grid-info-music-box {
-    margin-top: 10px;
-    margin-left: 20px;
+  /* 미모지를 담는 이미지 박스 */
+  .grid-memoji-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 0px auto;
+    background-color: white;
+    border-radius: 50%; /* 둥글게 만들기 */
+  }
+
+  /* 미모지 */
+  .grid-memoji {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* 노래가 담겨있는 박스 */
+  .grid-music-box {
+    margin: 10px;
     padding: 5px;
     border: 2px solid #36c038;
     border-radius: 20px;
-    width: 150px;
   }
 
-  .grid-info-music-box span {
-    font-size: smaller;
+  /* 노래 제목 */
+  .grid-music {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 12px;
   }
 
-  .grid-info-music-note {
-    padding-right: 5px;
+  /* 뮤직 아이콘 */
+  .grid-music-icon {
     width: 20px;
     height: 20px;
-    vertical-align: sub;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: sub; /* 노래 제목이랑 높이 맞추기 */
   }
 
-  .grid-info-nick {
-    padding-top: 20px;
-    font-family: "GmarketSansMedium", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+  /* 4글자 수식어 */
+  .grid-nick {
+    margin-top: 20px;
   }
-  .grid-info-name {
+
+  /* 이름 */
+  .grid-name {
     padding-top: 10px;
+  }
+
+  .grid-nick,
+  .grid-name {
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #333;
   }
-  .grid-info-footer {
+
+  /* 상세 정보 박스 푸터 */
+  .grid-footer {
     padding-top: 30px;
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 10px;
@@ -101,180 +103,150 @@
   }
 }
 
-.grid-footer {
-  padding-bottom: 100px;
-}
-
-/*모바일 버전 */
-
-.grid-mobile-member {
-  width: 800px;
-  border: 1px outset #0d1c3c;
-  border-radius: 20px;
-  display: flex;
-  flex: 1; /*각 칸들이 동일한 비율 유지하도록 하는 기능*/
-  margin-bottom: 10px;
-
-  cursor: pointer;
-
-  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
-}
-
-.grid-mobile-member:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2);
-}
-
-.grid-mobile-member:active {
-  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.25);
-}
-
-/*프로필 사진*/
-.grid-mobile-pic-box {
-  box-sizing: border-box;
-  width: 50px;
-  height: 50px;
-  margin: 6px;
-  padding: 0%;
-  background: white;
-  border: 1px solid #0d1c3c;
-  border-radius: 50%;
-}
-.grid-mobile-pic {
-  width: 50px;
-  height: 50px;
-}
-/*이름*/
-.grid-mobile-name {
-  font-family: "GmarketSansMedium";
-  color: #0d1c3c;
-  font-size: 20px;
-  padding: 10px;
-  padding-bottom: 3%;
-  text-align: left;
-}
-/*키워드*/
-.grid-mobile-keyword {
-  width: 60px;
-  height: 15px;
-  background: #0d1c3c;
-  border-radius: 104.59px;
-  margin-left: 2px;
-  color: white;
-  font-family: "GmarketSansMedium";
-  font-size: 12px;
-  text-align: center;
-}
-/*키워드들 묶는 클래스*/
-.grid-member-info {
-  display: flex;
-  flex-direction: row;
-}
-/*음악 박스*/
-.grid-mobile-music {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 220px;
-  height: 30px;
-  background: beige;
-  border: 1px solid #36c038;
-  border-radius: 104.59px;
-  margin-left: auto;
-  margin-right: 10px;
-  margin-top: 15px;
-  padding-right: 20px;
-  padding-left: 10px;
-}
-/*음악 제목*/
-.grid-mobile-music-title {
-  font-family: "GmarketSansMedium";
-  font-size: 10px;
-  color: #0d1c3c;
-}
-/*플레이 버튼*/
-.grid-mobile-music-icon {
-  height: 17px;
-  width: 17px;
-  vertical-align: sub;
-}
-
-
-/* hover 말풍선 */
-.grid-member p {
-  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
-  background-color: white;
-  width: 200px;
-  color: black;
-  top: -100px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 30px;
-  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
-  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
-  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
-  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
-
+/* 코멘트 말풍선 */
+.grid-comment {
   visibility: hidden;
-
+  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
+  top: -100px;
+  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
+  width: 280px;
+  padding: 20px;
+  background-color: white;
   box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  border-radius: 30px;
+  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
+  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
+  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어남.*/
   transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
 }
 
-.grid-member p:after {
-  content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
+/* 코멘트 말풍선 꼬랑지 */
+.grid-comment:after {
   position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
-  background-color: white;
+  bottom: -10px;
+  left: 50%; /*왼쪽에서 50%위치에 둔다.*/
   width: 20px;
   height: 20px;
-  transform: rotate(45deg) translateX(-50%);
-  bottom: -10px;
-  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
-  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
-}
-
-.grid-member:hover p {
-  opacity: 1;
-  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
-  box-shadow: 0 5px 50px 12px rgba(0, 0, 0, 0.4);
-}
-
-.grid-mobile-member p {
-  position: absolute; /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
   background-color: white;
-  width: 200px;
-  color: black;
-  top: -65px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 30px;
-  left: 50%; /*중앙배치 : 왼쪽에서 50%위치*/
-  transform: translateX(-50%); /*중앙배치 : X크기값을 50%만큼 이동*/
-  opacity: 0; /*이벤트설정 : 서서히 변하게 함*/
-  transition: 0.5s; /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
-
-  visibility: hidden;
-
-  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
-}
-
-.grid-mobile-member p:after {
+  transform: rotate(45deg) translateX(-50%); /*크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
   content: ""; /*가상클래스 before, after는 무조건 content가 있어야 작동*/
-  position: absolute; /*상위클래스icon이 relative이므로, absolute로 설정하여 동적페이지에도 같은 위치로 유지*/
-  background-color: white;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg) translateX(-50%);
-  bottom: -5px;
-  left: 50%; /*1. 왼쪽에서 50%위치에 둔다.*/
-  /*2. 크기값을 50%만큼 이동시켜준다.->항상 중앙에 위치하게됨*/
 }
 
-.grid-mobile-member:hover p {
+/* hover, touch 시에 말풍선 뜨게 하기 */
+.grid-member:hover .grid-comment,
+.grid-member:active .grid-comment,
+.grid-member:focus .grid-comment {
+  visibility: visible;
+  box-shadow: 0 5px 50px 12px rgba(0, 0, 0, 0.4);
   opacity: 1;
-  visibility: visible; /*hover시 발생하ㅡㄴ 이벤트*/
-  box-shadow: 0 -15px 50px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ========== */
+/* ||       ||*/
+/* ||       ||*/
+/* ||       ||*/
+/* ||       ||*/
+/* ========== */
+/*     ||     */
+/* ========== */
+
+@media (max-width: 450px) {
+  #likelion_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 자동 줄바꿈 */
+    position: relative;
+    padding: 40px;
+    justify-content: center;
+
+    .grid-member {
+      display: flex;
+      flex-direction: row;
+      flex: 1; /*각 칸들이 동일한 비율 유지하도록 하는 기능*/
+      flex-wrap: wrap; /* 자동 줄바꿈 */
+      margin: 0px auto 10px auto;
+      background-color: #f9c756;
+      box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+    }
+
+    .grid-memoji-box {
+      width: 60px;
+      height: 60px;
+      margin: 6px;
+      border: 1px solid #0d1c3c;
+    }
+
+    .grid-memoji {
+      width: 60px;
+      height: 60px;
+    }
+
+    .grid-name {
+      padding: 10px;
+      padding-bottom: 3%;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .grid-keyword-box {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .grid-keyword {
+      width: 60px;
+      height: 15px;
+      margin-left: 2px;
+      padding: 5px 0px 5px 0px;
+      background: #0d1c3c;
+      border-radius: 100px;
+      font-family: "GmarketSansMedium";
+      font-size: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .grid-music-box {
+      display: flex;
+      width: auto;
+      height: auto;
+      margin: 10px auto 10px auto;
+      padding: 5px 10px 5px 10px;
+      background: beige;
+      border: 1px solid #36c038;
+      border-radius: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .grid-music {
+      margin: 0px 10px 0px 10px;
+      font-size: 10px;
+      color: #0d1c3c;
+    }
+
+    .grid-music-icon {
+      width: 15px;
+      height: 15px;
+    }
+
+    .grid-comment {
+      top: -65px;
+      width: 200px;
+      padding: 10px;
+    }
+
+    .grid-comment:after {
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+    }
+
+    .grid-member:hover .grid-comment {
+      box-shadow: 0 -15px 50px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
 }

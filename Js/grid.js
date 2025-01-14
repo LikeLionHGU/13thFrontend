@@ -151,8 +151,8 @@ const grid_info_members_mobile = [
 const htmlString1 = grid_info_members
   .map(
     (member) => `
-      <div class="grid-member" onclick="saveMemberNum('${member.num}')">
-        <div class="grid-info-memoji-box">
+      <div class="grid-member" onclick="alert('짜잔~~~~')">
+        <div class="grid-memoji-box">
             <img
                 class="grid-memoji"
                 src="./assets/img/grid/memoji/${member.num}.png"
@@ -181,10 +181,9 @@ const htmlString1 = grid_info_members
 
 const htmlString2 = grid_info_members_mobile
   .map(
-    (
-      member
-    ) => `<div class="grid-mobile-member" onclick="saveMemberNum('${member.num}', '${member}')">
-        <div class="grid-mobile-pic-box">
+    (member) => `
+      <div class="grid-member">
+        <div class="grid-memoji-box">
           <img
             class="grid-memoji"
             src="./assets/img/grid/memoji/${member.num}.png"
@@ -222,26 +221,3 @@ window.onresize = function () {
 };
 
 window.onresize();
-
-function saveMemberNum(memberNum) {
-  console.log("member", memberNum);
-  window.localStorage.setItem("num", memberNum);
-  // console.log(memberData);
-  const modal = document.querySelector(".modal");
-  modal.style.display = "flex";
-  // modal
-  //   .querySelector(".modal_profile_picture > img")
-  //   .setAttribute("src", memberData.profile);
-  modal.querySelector("#modal_profile_name").innerText =
-    grid_info_members[memberNum - 1].name;
-  console.log(grid_info_members[memberNum - 1].name);
-  // modal.querySelector(".modal_music_name").innerText = memberData.music;
-  // modal.querySelector(".modal_music_singer").innerText = memberData.artist;
-  // modal.querySelector(".modal_music_name").innerText = memberData.music;
-  // modal.querySelector(".modal_profile_motto").innerText = memberData.motto;
-  // modal.querySelector(".github").setAttribute("href", memberData.github);
-  // modal.querySelector(".introduce").setAttribute("href", memberData.introduce);
-  // modal
-  //   .querySelector("instagramgram")
-  //   .setAttribute("href", memberData.instagram);
-}
