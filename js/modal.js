@@ -314,6 +314,7 @@ modalCloseBtn.addEventListener("click", () => {
   //document.body.style.overflow = "auto";
   modal.style.display = "none";
   modal.style.overflow = "auto";
+  document.body.style.overflow = '';
   console.log("AA");
 });
 
