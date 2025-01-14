@@ -1,89 +1,96 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#footer {
+  background-color: #0f1b2b;
+  color: #e7c986;
+  font-family: "GmarketSansMedium", sans-serif; /* 폰트 통일 */
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.banner {
-  width: 100%;
-  padding: 30px;
-  position: relative;
-}
-
-.top-circle {
-  clip-path: path("M0,100 Q50%,0 100%,100 L100%,0 L0,0 Z");
-}
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto; 
+.footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-.branding {
-  flex: 2; 
-  padding: 20px;
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.branding h1 {
+.footer-content {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-content h1 {
   font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.branding p {
-  margin-bottom: 10px;
-  line-height: 1.5;
+.footer-links {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
 }
 
-
-.links {
-  flex: 1; 
-  padding: 10px;
-}
-
-.learn-more h3 {
+.footer-links h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #f4cb69;
 }
 
-a {
-  color: #e7c986;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-
-.join-us ul {
+.footer-links ul {
   list-style: none;
-  display: flex; 
-  gap: 15px; 
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.join-us li img {
-  width: -20px;
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links li img {
+  width: 30px;
   height: 30px;
+  transition: transform 0.2s ease;
 }
 
-.join-us li img:hover {
-  transform: scale(1.1);
+.social-links li img:hover {
+  transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.likelion-logo {
-  width: 50px; 
-  height: auto;
-  margin-top: 20px;
+  .footer-content, .footer-links {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
 }
-
