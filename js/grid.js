@@ -378,7 +378,7 @@ const htmlString1 = grid_info_members
   .map(
     (member) => `
       <div class="grid-member" onclick="saveMemberNum('${member.num}')">
-        <div class="grid-info-memoji-box">
+        <div class="grid-memoji-box">
             <img
                 class="grid-info-memoji"
                 src="./assets/img/grid/memoji/memoji${member.num}.png"
@@ -409,8 +409,8 @@ const htmlString2 = grid_info_members_mobile
   .map(
     (
       member
-    ) => `<div class="grid-mobile-member" onclick="saveMemberNum('${member.num}', '${member}')">
-        <div class="grid-mobile-pic-box">
+    ) => `<div class="grid-member" onclick="saveMemberNum('${member.num}', '${member}')">
+        <div class="grid-memoji-box">
           <img
             class="grid-mobile-pic"
             src="./assets/img/grid/memoji/memoji${member.num}.png"
