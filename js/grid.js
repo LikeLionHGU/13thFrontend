@@ -404,6 +404,7 @@ const htmlString1 = grid_info_members
   `
   )
   .join("");
+
 const htmlString2 = grid_info_members_mobile
   .map(
     (
