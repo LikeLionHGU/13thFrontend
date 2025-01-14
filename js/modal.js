@@ -1,6 +1,4 @@
-
 const grid_info_members_versionM = [
-
   {
     num: 1,
     music: "찬란",
@@ -111,9 +109,7 @@ const grid_info_members_versionM = [
   },
 ];
 
-
 const grid_info_members_mobile_versionM = [
-
   {
     num: 1,
     name: "김원진",
@@ -258,16 +254,14 @@ const grid_info_members_mobile_versionM = [
     profile: "",
     bgImage: "",
   },
-];*/
+];
 
 const modal = document.querySelector(".modal");
 // const btnOpenModal = document.querySelector(".btn-open-modal");
 
-
 // btnOpenModal.addEventListener("click", () => {
 //   modal.style.display = "flex";
 // });
-=======
 // btnOpenModal.addEventListener("click", () => {
 //   modal.style.display = "flex";
 //   console.log("hl");
@@ -282,8 +276,6 @@ const modal = document.querySelector(".modal");
 // const prLink = document.getElementById("modal_introduce");
 // const instaLink = document.getElementById("modal_insta");
 // //배경
-                                        
-
 
 // function getMemberNum(){
 //   const selectMemberNumber = localStorage.getItem('num');
@@ -299,7 +291,6 @@ const modal = document.querySelector(".modal");
 // prLink.src = showMember.prl;
 // instaLink.src = showMember.insta;
 // 배경
-
 
 /*
   modal
