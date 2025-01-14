@@ -110,4 +110,10 @@
   .social-links {
     justify-content: center;
   }
+
+  .footer-content p,
+  .footer-content p1,
+  .footer-content p2 {
+  display:none;
+}
 }
