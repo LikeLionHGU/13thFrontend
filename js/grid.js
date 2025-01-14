@@ -18,7 +18,7 @@ const grid_info_members = [
     music: "Love Never Felt So..",
     nick: "갬성추구",
     name: "박서연",
-    comment: "최강 프론트 엔드 화이팅!",
+    comment: "최강 프론트엔드 화이팅!",
   },
   {
     num: 4,
