@@ -452,6 +452,8 @@ window.onresize = function () {
 window.onresize();
 
 function saveMemberNum(memberNum) {
+  const body = document.querySelector('body');
+  body.style.overflow = 'hidden'
   console.log("member", memberNum);
   window.localStorage.setItem("num", memberNum);
   // console.log(modal_info_members[memberNum - 1]);
