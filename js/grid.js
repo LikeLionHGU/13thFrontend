@@ -183,8 +183,8 @@ const htmlString2 = grid_info_members_mobile
   .map(
     (
       member
-    ) => `<div class="grid-mobile-member" onclick="saveMemberNum('${member.num}', '${member}')">
-        <div class="grid-mobile-pic-box">
+    ) => `<div class="grid-member" onclick="saveMemberNum('${member.num}', '${member}')">
+        <div class="grid-memoji-box">
           <img
             class="grid-memoji"
             src="./assets/img/grid/memoji/${member.num}.png"

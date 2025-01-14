@@ -65,6 +65,7 @@
   .grid-music {
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 12px;
+    color: #0d1c3c;
   }
 
   /* 뮤직 아이콘 */
@@ -194,13 +195,14 @@
     .grid-keyword-box {
       display: flex;
       flex-direction: row;
+      height: auto;
     }
 
     .grid-keyword {
       width: 60px;
       height: 15px;
       margin-left: 2px;
-      padding: 5px 0px 5px 0px;
+      padding: 1px 0px 1px 0px;
       background: #0d1c3c;
       border-radius: 100px;
       font-family: "GmarketSansMedium";
@@ -225,7 +227,6 @@
     .grid-music {
       margin: 0px 10px 0px 10px;
       font-size: 10px;
-      color: #0d1c3c;
     }
 
     .grid-music-icon {
