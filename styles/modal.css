@@ -6,7 +6,6 @@
   font-style: normal;
 }
 body {
-  
   font-family: "GmarketSansMedium";
 }
 .modal {
@@ -20,7 +19,7 @@ body {
   width: 100%;
   height: 100%;
 
-  color:white;
+  color: white;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal_body {
@@ -47,6 +46,13 @@ body {
 
   background-image: url(/assets/img/modal/back.jpg);
   background-size: cover;
+
+  color: aliceblue;
+
+  > img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .modal_music {
