@@ -9,6 +9,7 @@ body {
   font-family: "GmarketSansMedium";
 }
 .modal {
+  z-index:2000;
   position: fixed;
   display: none;
 
@@ -26,8 +27,8 @@ body {
   top: 50%;
   padding: 40px;
   padding-bottom: 30px;
-  width: 350px;
-  height: 650px;
+  width: 410px;
+  height: 720px;
 
   border-radius: 10px;
   border: 1px solid none;
