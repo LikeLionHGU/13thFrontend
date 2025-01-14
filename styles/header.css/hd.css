@@ -99,7 +99,7 @@ color: #F9C756;
   text-decoration: none;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 449px) {
   #header_navigation {
     display: none;
   }
@@ -108,7 +108,7 @@ color: #F9C756;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 450px) {
   #header_navigation {
     display: inline-block;
   }
@@ -140,31 +140,3 @@ color: #F9C756;
   }
 }
   
-/* 
-  body {
-    margin: 0;
-    overflow: hidden; 
-  }
-  
-  #heart {
-    cursor: pointer;
-  }
-  
-  .heart {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    animation: fall 3s linear infinite;
-  }
-  
-  @keyframes fall {
-    0% {
-      transform: translateY(0) scale(0.5);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(100vh) scale(1.5);
-      opacity: 0;
-    }
-  }
-   */
