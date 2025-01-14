@@ -69,7 +69,7 @@ const memberData = [
     prl: "https://jaeho777.github.io/-1-_-/",
     insta: "https://www.instagram.com/_olzhho_/",
     profile: "./assets/img/modal/memoji/6.png",
-    bgImage: "./assets/img/modal/backgroundImage/6.JPEG",
+    bgImage: "./assets/img/modal/backgroundImage/6.JPG",
   },
   {
     num: 7,
@@ -256,13 +256,21 @@ const memberData = [
   },
 ];*/
 
-const modal = document.querySelector(".modal");
-const btnOpenModal = document.querySelector(".btn-open-modal");
+const body = document.querySelector('body');
 
-btnOpenModal.addEventListener("click", () => {
-  modal.style.display = "flex";
-  getMemberNum();
+
+const modal = document.querySelector(".modal");
+const btnOpenModal = document.querySelectorAll(".grid-member");
+
+btnOpenModal.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    console.log("btn" + btnOpenModal);
+    getMemberNum();
+    body.style.overflow = 'hidden'
+  });
 });
+
 
 const musicName = document.getElementById("modal_music_name");
 const musicSinger = document.getElementById("modal_music_singer");
@@ -272,7 +280,8 @@ const profileMotto = document.getElementById("modal_profile_motto");
 const githubLink = document.getElementById("modal_github");
 const prLink = document.getElementById("modal_introduce");
 const instaLink = document.getElementById("modal_insta");
-//배경
+const modalBody = document.querySelector('.modal_body');
+
                                         
 
 
@@ -288,17 +297,18 @@ function getMemberNum(){
   githubLink.href = showMember.github;
   prLink.href = showMember.prl;
   instaLink.href = showMember.insta;
+  modalBody.style.backgroundImage = `url(${showMember.bgImage})`;
 }
 
 const modalNode = document.querySelector("div.modal");
 
-const modalCloseBtn = document.querySelector(".modal_close_btn");
-modalCloseBtn.addEventListener("click", () => {
-  // const modal = document.querySelector(".modal");
-  modal.style.display = "none";
-  modal.style.overflow = "auto";
-  console.log("AA");
-});
+// const modalCloseBtn = document.querySelector(".modal_close_btn");
+// modalCloseBtn.addEventListener("click", () => {
+//   // const modal = document.querySelector(".modal");
+//   modal.style.display = "none";
+//   modal.style.overflow = "auto";
+//   console.log("AA");
+// });
 
 //모달이 아닌 곳을 클릭하면 모달 닫힘
 function closeModal() {
@@ -312,6 +322,8 @@ window.addEventListener("click", (e) => {
       (document.body.style.overflow = "auto"))
     : false;
 });
+
+
 // 배경
 
 /*
