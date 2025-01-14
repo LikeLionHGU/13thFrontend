@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모달창연습</title>
     <style>
+      @font-face {
+          font-family: 'GmarketSansMedium';
+          src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
         body{
           color: white;
+          font-family: 'GmarketSansMedium';
         }
         .modal{
             position:absolute;
@@ -27,6 +34,7 @@
             position:absolute;
             top:50%; 
             padding:40px;  
+            padding-bottom: 30px;
             width: 350px;
             height: 650px;
 
@@ -44,21 +52,41 @@
             flex-direction: column; /* 세로 정렬 */
             justify-content: center; /* 수직 중앙 정렬 */
             align-items: center; /* 수평 중앙 정렬 */
+
+            background-image: url(./assets/img/modal/back.jpg);
+            background-size: cover;
         }
         
         .modal_music{
-          width: 430px;
-          height: 80px;
+          width: 410px;
+          height: 100px;
 
-          border: 1px solid rgb(143, 97, 97);
+          /* margin-top: 70px; */
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 20px;
+
+          background-color: rgba(255, 255, 255, 0.2);
+
         }
 
         .modal_profile_picture{
           width: 100px;
           height: 100px;
-          border: 1px solid rgb(143, 97, 97);
 
-          margin-top: 200px;
+          margin-top: 210px; 
+          border-radius: 10%;
+
+          background-color: rgba(255, 255, 255, 0.2);
+
+        }
+
+        .modal_profile_pic{
+          width: 105px;
+          height: 105px;
+          
         }
 
         .modal_link_box_row{
@@ -66,7 +94,9 @@
           flex-direction:row;
           justify-content: center; 
           align-items:center; 
-         
+         margin-top: 20px;
+         margin-left: 20px;
+
         }
 
         .modal_link_box_col{
@@ -74,13 +104,36 @@
           flex-direction:column;
           justify-content: center; 
           align-items:center; 
-          padding-right: 30px;
-          padding-left: 30px;
+          padding-right: 5px;
+          padding-left: 5px;
         }
 
         .modal_link_pic{
-          width: 70px;
-          height: 70px;
+          width: 50px;
+          height: 50px;
+        }
+
+        p{
+          margin:22px;
+        }
+
+        #modal_music_singer{
+          margin-top: 4px;
+        }
+
+        #modal_music_name{
+          margin-bottom: 10px;
+        }
+
+        #modal_profile_name{
+
+        }
+        h3{
+          margin: 10px;
+          margin-top: 15px;
+        }
+        h5{
+          margin: 10px;
         }
     </style>
 </head>
@@ -88,26 +141,26 @@
     <div class="modal">
         <div class="modal_body">
             <div class="modal_music">
-              <p> 음악 제목 </p>
-              <p> 가수 </p>
+              <p id="modal_music_name"> 첫 만남은 너무 어려워 </p>
+              <p id="modal_music_singer"> tws </p>
             </div>
             <div class="modal_profile_picture">
-
+              <img src="./assets/img/modal/profile.png" class="modal_profile_pic">
             </div>
-            <p> 이하린 </p>
-            <p> 한줄 좌우명</p>
+            <h3 id="modal_profile_name">이하린</h3>
+            <h5 id="modal_profile_motto">한줄 좌우명</h5>
 
             <div class="modal_link_box_row">
               <div class="modal_link_box_col">
-                <img src="./assets/img/github.png" class="modal_link_pic">
+                <a href="https://www.instagram.com/harlo_ii/"><img src="./assets/img/modal/github.png" class="modal_link_pic"></a>
                 <p> github </p>
               </div>
               <div class="modal_link_box_col">
-                <img src="./assets/img/link.png" class="modal_link_pic">
+                <a href="https://www.instagram.com/harlo_ii/"><img src="./assets/img/modal/link.png" class="modal_link_pic"></a>
                 <p> intoduce </p>
               </div>
               <div class="modal_link_box_col">
-                <img src="./assets/img/insta.png" class="modal_link_pic">
+                <a href="https://www.instagram.com/harlo_ii/"><img src="./assets/img/modal/insta.png" class="modal_link_pic"></a>
                 <p> instagram </p>
               </div>
             </div>
@@ -115,13 +168,9 @@
         
     </div>
     <button class="btn-open-modal">Modal열기</button>
-    <script>
-        const modal = document.querySelector('.modal');
-        const btnOpenModal=document.querySelector('.btn-open-modal');
+    <script  src="test.js">
 
-        btnOpenModal.addEventListener("click", ()=>{
-            modal.style.display="flex";
-        });
+        
     </script>
 </body>
 </html>

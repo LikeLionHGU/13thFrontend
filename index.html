@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>멋사 13기 프론트엔드</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/header.css/hd.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
+  </head>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
@@ -23,16 +31,54 @@
         <img src="./assets/img/likelion-header.jpg" alt="LikeLion-Logo" />
         <a href="#">LikeLion Frontend</a>
       </div>
-    </div>
 
-    <!-- Grid 영역 -->
-    <div id="likelion-grid">
-      <div class="member template">
-        <div class="info-name"></div>
-        <a class="link-a"></a>
+      <span id="header-padding">
+        <span id="header_logo">
+          <a href="index.html"
+            ><img src="./assets/img/likelion-header.png" alt="LikeLion-Logo"
+          /></a>
+          <span id="header-text"
+            >I
+            <svg
+              id="heart"
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="33"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fb0000"
+                d="M21.19 12.683c-2.5 5.41-8.62 8.2-8.88 8.32a.85.85 0 0 1-.62 0c-.25-.12-6.38-2.91-8.88-8.32c-1.55-3.37-.69-7 1-8.56a4.93 4.93 0 0 1 4.36-1.05a6.16 6.16 0 0 1 3.78 2.62a6.15 6.15 0 0 1 3.79-2.62a4.93 4.93 0 0 1 4.36 1.05c1.78 1.56 2.65 5.19 1.09 8.56"
+              />
+            </svg>
+            FRONTEND</span
+          >
+        </span>
+        <span id="header_navigation">
+          <button class="header-home">HOME</button>
+          <button class="header-about">ABOUT</button>
+          <button class="header-contact">CONTACT</button>
+        </span>
+      </span>
+
+    </div>
+    <div class="header-mobile-nav">
+      <div id="header-mob_top">
+        <img src="./assets/img/mob_nav_top.png" alt="mobile navigation top" />
+      </div>
+      <div id="header-mob_about">
+        <img
+          src="./assets/img/mob_nav_about.png"
+          alt="mobile navigation about"
+        />
+      </div>
+      <div id="header-mob_bot">
+        <img
+          src="./assets/img/mob_nav_bot.png"
+          alt="mobile navigation bottom"
+        />
       </div>
     </div>
-
     
      <!-- Footer 영역 -->
      <footer id="footer">
@@ -43,6 +89,7 @@
           <p>한동대 멋사 13기 프론트엔드 컨셉: "깔끔함"</p>
           <p>프론트엔드 팀은 깔끔하고 간결한 화면을 통해 프로젝트의 핵심 메시지를 사용자에게 명확히 전달하려고 합니다.</p>
         </div>
+
     
         <div class="footer-links-wrapper">
           <div class="footer-links">
@@ -73,5 +120,9 @@
     </footer>
     
 
+  <script src="./js/grid.js"></script>
+    <script src="./js/ScreenMove.js"></script>
+    <script src="./js/heartAnimation.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>  
