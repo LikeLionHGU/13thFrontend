@@ -219,7 +219,7 @@ const modal_info_members = [
     introduce: "https://jaeho777.github.io/-1-_-/",
     instagram: "https://www.instagram.com/_olzhho_/",
     profile: "./assets/img/modal/memoji/6.png",
-    bgImage: "./assets/img/modal/backgroundImage/6.JPEG",
+    bgImage: "./assets/img/modal/backgroundImage/6.jpg",
   },
   {
     num: 7,

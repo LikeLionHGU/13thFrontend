@@ -310,6 +310,8 @@ const modalNode = document.querySelector("div.modal");
 const modalCloseBtn = document.querySelector(".modal_close_btn");
 modalCloseBtn.addEventListener("click", () => {
   // const modal = document.querySelector(".modal");
+  //modalNode.body.style.display = "none";
+  //document.body.style.overflow = "auto";
   modal.style.display = "none";
   modal.style.overflow = "auto";
   console.log("AA");
