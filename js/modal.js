@@ -8,7 +8,7 @@ const memberData = [
     github: "https://github.com/lingard09",
     prl: "https://lingard09.github.io/Profile_Page/",
     insta: "https://www.instagram.com/kinnwonjin/",
-    profile: "./assets/img/modal/memoji/1.jpg",
+    profile: "./assets/img/modal/memoji/1.png",
     bgImage: "./assets/img/modal/backgroundImage/1.JPEG",
   },
   {
@@ -20,7 +20,7 @@ const memberData = [
     github: "https://github.com/KimYoonChae",
     prl: "https://kimyoonchae.github.io/Profile-page/",
     insta: "https://www.instagram.com/yo0n.c/",
-    profile: "./assets/img/modal/memoji/2.jpg",
+    profile: "./assets/img/modal/memoji/2.png",
     bgImage: "./assets/img/modal/backgroundImage/2.JPG",
   },
   {
@@ -32,7 +32,7 @@ const memberData = [
     github: "https://github.com/yean1234",
     prl: "https://yean1234.github.io/introduce-myself/index.html",
     insta: "hhttps://www.instagram.com/boxyean_05",
-    profile: "./assets/img/modal/memoji/3.jpg",
+    profile: "./assets/img/modal/memoji/3.png",
     bgImage: "./assets/img/modal/backgroundImage/3.JPG",
   },
   {
@@ -44,7 +44,7 @@ const memberData = [
     github: "https://github.com/Sunghaeun",
     prl: "https://sunghaeun.github.io/new-profile/",
     insta: "https://www.instagram.com/harlo_ii/",
-    profile: "./assets/img/modal/memoji/4.jpg",
+    profile: "./assets/img/modal/memoji/4.png",
     bgImage: "./assets/img/modal/backgroundImage/4.JPG",
   },
   {
@@ -56,7 +56,7 @@ const memberData = [
     github: "https://github.com/playoh",
     prl: "https://lingard09.github.io/Profile_Page/",
     insta: "https://www.instagram.com/play0h/",
-    profile: "./assets/img/modal/memoji/5.jpg",
+    profile: "./assets/img/modal/memoji/5.png",
     bgImage: "./assets/img/modal/backgroundImage/5.PNG",
   },
   {
@@ -68,7 +68,7 @@ const memberData = [
     github: "https://github.com/Jaeho777",
     prl: "https://jaeho777.github.io/-1-_-/",
     insta: "https://www.instagram.com/_olzhho_/",
-    profile: "./assets/img/modal/memoji/6.jpg",
+    profile: "./assets/img/modal/memoji/6.png",
     bgImage: "./assets/img/modal/backgroundImage/6.JPEG",
   },
   {
@@ -80,7 +80,7 @@ const memberData = [
     github: "https://github.com/junnyang",
     prl: "https://github.com/junnyang/LikeLion-myprofile",
     insta: "https://www.instagram.com/gkfls._.21/",
-    profile: "./assets/img/modal/memoji/7.jpg",
+    profile: "./assets/img/modal/memoji/7.png",
     bgImage: "./assets/img/modal/backgroundImage/7.JPEG",
   },
   {
@@ -92,7 +92,7 @@ const memberData = [
     github: "https://github.com/JinHeeWond",
     prl: "https://github.com/JinHeeWond/new-profile.git",
     insta: "https://www.instagram.com/wlsgmldnjs?igsh=MTEyNHIzdWpzNjJhMg%3D%3D&utm_source=qr",
-    profile: "./assets/img/modal/memoji/8.jpg",
+    profile: "./assets/img/modal/memoji/8.png",
     bgImage: "./assets/img/modal/backgroundImage/8.PNG",
   },
   {
@@ -104,7 +104,7 @@ const memberData = [
     github: "https://github.com/Gyuho-Han",
     prl: "https://gyuho-han.github.io/LikeLionIntroWeb/",
     insta: "https://www.instagram.com/gyuhohan03/",
-    profile: "./assets/img/modal/memoji/9.jpg",
+    profile: "./assets/img/modal/memoji/9.png",
     bgImage: "./assets/img/modal/backgroundImage/9.JPG",
   },
 ];
