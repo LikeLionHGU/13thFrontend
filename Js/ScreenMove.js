@@ -1,24 +1,36 @@
-const home = document.querySelector(".header-home");
-const about = document.querySelector(".header-about");
-const contact = document.querySelector(".header-contact");
+const button = document.querySelectorAll("button");
+const likelionHead = document.querySelector("#likelion-header");
+const likelionGrid = document.querySelector("#likelion_grid");
+const likelionFoot = document.querySelector("#footer");
 
-function goToScroll(name) {
-  let location = name.offsetTop;
-  window.scrollTo({top: location, behavior: 'smooth'});
-  console.log(`I am ${name}`);
-}
+const firstHome = likelionHead.offsetTop;
+const secondAbout = likelionGrid.offsetTop;
+const thirdContact = likelionFoot.offsetTop;
 
-home.onclick = () => goToScroll(home);
-about.onclick = () => goToScroll(about);
-contact.onclick = () => goToScroll(contact);
+button[0].onclick = function(){
+  window.scroll({top:firstHome, behavior: 'smooth'})
+};
+button[1].onclick = function(){
+  window.scroll({top:secondAbout, behavior: 'smooth'})
+};
+button[2].onclick = function(){
+  window.scroll({top:thirdContact, behavior: 'smooth'})
+};
 
-const mobTop = document.querySelector("#mob_top");
-const mobAbout = document.querySelector("#mob_about");
-const mobBot = document.querySelector("#mob_bot");
+const mobHead = document.querySelector("#header-mob_top");
+const mobGrid = document.querySelector("#header-mob_about");
+const mobFoot = document.querySelector("#header-mob_bot");
 
-mobTop.onclick = () => goToScroll(mobTop);
-mobAbout.onclick = () => goToScroll(mobAbout);
-mobBot.onclick = () => goToScroll(mobBot);
+mobHead.onclick = function(){
+  window.scroll({top:firstHome, behavior: 'smooth'})
+};
+mobGrid.onclick = function(){
+  window.scroll({top:secondAbout, behavior: 'smooth'})
+};
+mobFoot.onclick = function(){
+  window.scroll({top:thirdContact, behavior: 'smooth'})
+};
+
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
