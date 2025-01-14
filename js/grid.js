@@ -152,7 +152,7 @@ const htmlString1 = grid_info_members
   .map(
     (member) => `
       <div class="grid-member" onclick="saveMemberNum('${member.num}')">
-        <div class="grid-info-memoji-box">
+        <div class="grid-memoji-box">
             <img
                 class="grid-memoji"
                 src="./assets/img/grid/memoji/${member.num}.png"
