@@ -1,106 +1,119 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+#footer {
   background-color: #0f1b2b;
   color: #e7c986;
+  font-family: "GmarketSansMedium", sans-serif; /* 폰트 통일 */
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.banner {
-  width: 100%;
-  padding: 30px;
-  position: relative;
-}
-
-.top-circle {
-  position: absolute;
-  top: -40px; 
-  left: 0;
-  width: 100%; 
-  height: 120px; 
-  background-color: #f4cb69;
-  clip-path: path("M0,120 Q50%,0 100%,120 L100%,0 L0,0 Z");
-  border-bottom-right-radius: 500px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto; 
+.footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-.branding {
-  flex: 2; 
-  padding: 20px;
+.footer-logo {
+  flex-shrink: 0;
 }
 
-.branding h1 {
-  font-size: 24px;
+.footer-logo img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  margin-right: 30px; 
+}
+
+.footer-content p,
+.footer-content p1,
+.footer-content p2 {
   margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.branding p {
-  margin-bottom: 10px;
-  line-height: 1.5;
+.footer-links-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  gap: 30px; 
+  flex: 1;
+  min-width: 500px;
 }
 
-
-.links {
-  flex: 1; 
-  padding: 10px;
+.footer-links {
+  flex: 1;
+  text-align: left;
 }
 
-.learn-more h3 {
+.footer-links h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #f4cb69;
 }
 
-a {
-  color: #e7c986;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-
-.join-us ul {
+.footer-links ul {
   list-style: none;
-  display: flex; 
-  gap: 15px; 
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.join-us li img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
+.footer-links ul li {
+  margin-bottom: 10px;
 }
 
-.join-us li img:hover {
-  transform: scale(1.1);
+.social-links {
+  display: flex;
+  gap: 15px;
 }
 
+.social-links li img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
 
-.likelion-logo {
-  width: 50px; 
-  height: auto;
-  margin-top: 20px;
+.social-links li img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .footer-links-wrapper {
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-content p,
+  .footer-content p1,
+  .footer-content p2 {
+  display:none;
+}
 }
