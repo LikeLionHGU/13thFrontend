@@ -461,6 +461,7 @@ function saveMemberNum(memberNum) {
   modalBody.style.background = `url('${
     modal_info_members[memberNum - 1].bgImage
   }')`;
+  modalBody.style.backgroundSize = "cover";
   modal
     .querySelector(".modal_profile_picture > img")
     .setAttribute("src", modal_info_members[memberNum - 1].profile);
