@@ -380,62 +380,59 @@ const htmlString1 = grid_info_members
       <div class="grid-member" onclick="saveMemberNum('${member.num}')">
         <div class="grid-memoji-box">
             <img
-                class="grid-info-memoji"
-                src="./assets/img/grid/memoji/memoji${member.num}.png"
+                class="grid-memoji"
+                src="./assets/img/grid/memoji/${member.num}.png"
                 alt="memoji"
             />
         </div>
         <div class="grid-info-box">
-            <div class="grid-info-music-box">
+            <div class="grid-music-box">
               <img
-                  class="grid-info-music-note"
+                  class="grid-music-icon"
                   src="./assets/img/grid/note.png"
                   alt="note"
               />
-              <span>${member.music}</span>
+              <span class="grid-music">${member.music}</span>
             </div>
-            <div class="grid-info-nick">${member.nick}</div>
-            <div class="grid-info-name">${member.name}</div>
-            <div class="grid-info-footer">- Frontend -</div>
+            <div class="grid-nick">${member.nick}</div>
+            <div class="grid-name">${member.name}</div>
+            <div class="grid-footer">- Frontend -</div>
         </div>
-        <p>${member.comment}</p>
+        <p class="grid-comment">${member.comment}</p>
       </div>
     </div>
   `
   )
   .join("");
-
-const htmlString2 = grid_info_members_mobile
+cconst htmlString2 = grid_info_members_mobile
   .map(
     (
       member
     ) => `<div class="grid-member" onclick="saveMemberNum('${member.num}', '${member}')">
         <div class="grid-memoji-box">
           <img
-            class="grid-mobile-pic"
-            src="./assets/img/grid/memoji/memoji${member.num}.png"
+            class="grid-memoji"
+            src="./assets/img/grid/memoji/${member.num}.png"
             alt="memoji"
           />
         </div>
         <div>
-          <div class="grid-mobile-name">${member.name}</div>
-          <div class="grid-member-info">
-            <div class="grid-mobile-keyword">${member.key1}</div>
-            <div class="grid-mobile-keyword">${member.key2}</div>
-            <div class="grid-mobile-keyword">${member.key3}</div>
+          <div class="grid-name">${member.name}</div>
+          <div class="grid-keyword-box">
+            <div class="grid-keyword">${member.key1}</div>
+            <div class="grid-keyword">${member.key2}</div>
+            <div class="grid-keyword">${member.key3}</div>
           </div>
         </div>
-        <div class="grid-mobile-music">
-          <div class="grid-mobile-music-title">${member.music}</div>
-          <div class="grid-mobile-music-icon-box">
+        <div class="grid-music-box">
+          <span class="grid-music">${member.music}</span>
             <img
-              class="grid-info-music-note"
+              class="grid-music-icon"
               src="./assets/img/grid/note.png"
               alt="note"
             />
-          </div>
-          <p>${member.comment}</p>
         </div>
+        <p class="grid-comment">${member.comment}</p>
       </div>
     `
   )
