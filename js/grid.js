@@ -485,4 +485,7 @@ function saveMemberNum(memberNum) {
   modal
     .querySelector("#instagram")
     .setAttribute("href", modal_info_members[memberNum - 1].instagram);
+
+  // const body = document.querySelector("body");
+  // body.style.overflow = "hidden";
 }
