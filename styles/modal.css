@@ -110,7 +110,7 @@ body {
   height: 50px;
 }
 
-p {
+.modal_p {
   margin: 22px;
 }
 
@@ -122,11 +122,12 @@ p {
   margin-bottom: 10px;
 }
 
-h3 {
+
+#modal_profile_name{
   margin: 10px;
   margin-top: 15px;
 }
-h5 {
+#modal_profile_motto {
   margin: 10px;
 }
 
