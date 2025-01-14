@@ -8,17 +8,17 @@ const grid_info_members = [
   },
   {
     num: 2,
-    music: "밝은 빛이 가득해 - W..",
+    music: "밝은 빛이 가득해 - WELOVE",
     nick: "생긋생긋",
     name: "김윤채",
     comment: "멋사 파이팅!",
   },
   {
     num: 3,
-    music: "Love Never Felt So..",
+    music: "Love Never Felt So Good..",
     nick: "갬성추구",
     name: "박서연",
-    comment: "최강 프론트 엔드 화이팅!",
+    comment: "최강 프론트엔드 화이팅!",
   },
   {
     num: 4,
@@ -29,14 +29,14 @@ const grid_info_members = [
   },
   {
     num: 5,
-    music: "Mr. Lawrence - 류이..",
+    music: "Mr. Lawrence - 류이치 사카..",
     nick: "이상주의",
     name: "오연주",
     comment: "재밋게 해봅시다아",
   },
   {
     num: 6,
-    music: "Antifreeze - 검정치..",
+    music: "Antifreeze - 검정치마",
     nick: "커커커몬",
     name: "이재호",
     comment: "전 멋사 진짜 좋은 것 같아요.",
@@ -89,7 +89,7 @@ const grid_info_members_mobile = [
     key1: "# 아창",
     key2: "# 카이퍼",
     key3: "# 🐑",
-    music: "Love Never Felt So Good - M..",
+    music: "Love Never Felt So Good - Michael Jackson",
     comment: "최강 프론트 엔드 화이팅!",
   },
   {
@@ -105,7 +105,7 @@ const grid_info_members_mobile = [
     num: 5,
     name: "오연주",
     key1: "# 공시",
-    key2: "# 카이퍼",
+    key2: "# 손양원",
     key3: "# 💪",
     music: "Mr. Lawrence - 류이치 사카모토",
     comment: "재밋게 해봅시다아",
@@ -148,33 +148,31 @@ const grid_info_members_mobile = [
   },
 ];
 
-const likelion_grid = document.getElementById("likelion_grid");
-
 const htmlString1 = grid_info_members
   .map(
     (member) => `
-      <div class="grid-member" onclick="alert('짜잔~~~!')">
-        <div class="grid-info-memoji-box">
+      <div class="grid-member" onclick="alert('짜잔~~~~')">
+        <div class="grid-memoji-box">
             <img
-                class="grid-info-memoji"
-                src="./assets/img/grid/memoji/memoji${member.num}.png"
+                class="grid-memoji"
+                src="./assets/img/grid/memoji/${member.num}.png"
                 alt="memoji"
             />
         </div>
         <div class="grid-info-box">
-            <div class="grid-info-music-box">
+            <div class="grid-music-box">
               <img
-                  class="grid-info-music-note"
+                  class="grid-music-icon"
                   src="./assets/img/grid/note.png"
                   alt="note"
               />
-              <span>${member.music}</span>
+              <span class="grid-music">${member.music}</span>
             </div>
-            <div class="grid-info-nick">${member.nick}</div>
-            <div class="grid-info-name">${member.name}</div>
-            <div class="grid-info-footer">- Frontend -</div>
+            <div class="grid-nick">${member.nick}</div>
+            <div class="grid-name">${member.name}</div>
+            <div class="grid-footer">- Frontend -</div>
         </div>
-        <p>${member.comment}</p>
+        <p class="grid-comment">${member.comment}</p>
       </div>
     </div>
   `
@@ -183,40 +181,39 @@ const htmlString1 = grid_info_members
 
 const htmlString2 = grid_info_members_mobile
   .map(
-    (member) => `<div class="grid-mobile-member" onclick="alert('짜잔~~~!')">
-        <div class="grid-mobile-pic-box">
+    (member) => `
+      <div class="grid-member">
+        <div class="grid-memoji-box">
           <img
-            class="grid-mobile-pic"
-            src="./assets/img/grid/memoji/memoji${member.num}.png"
+            class="grid-memoji"
+            src="./assets/img/grid/memoji/${member.num}.png"
             alt="memoji"
           />
         </div>
         <div>
-          <div class="grid-mobile-name">${member.name}</div>
-          <div class="grid-member-info">
-            <div class="grid-mobile-keyword">${member.key1}</div>
-            <div class="grid-mobile-keyword">${member.key2}</div>
-            <div class="grid-mobile-keyword">${member.key3}</div>
+          <div class="grid-name">${member.name}</div>
+          <div class="grid-keyword-box">
+            <div class="grid-keyword">${member.key1}</div>
+            <div class="grid-keyword">${member.key2}</div>
+            <div class="grid-keyword">${member.key3}</div>
           </div>
         </div>
-        <div class="grid-mobile-music">
-          <div class="grid-mobile-music-title">${member.music}</div>
-          <div class="grid-mobile-music-icon-box">
+        <div class="grid-music-box">
+          <span class="grid-music">${member.music}</span>
             <img
-              class="grid-info-music-note"
+              class="grid-music-icon"
               src="./assets/img/grid/note.png"
               alt="note"
             />
-          </div>
-          <p>${member.comment}</p>
         </div>
+        <p class="grid-comment">${member.comment}</p>
       </div>
     `
   )
   .join("");
 
 window.onresize = function () {
-  if (window.innerWidth < 800) {
+  if (window.innerWidth <= 450) {
     likelion_grid.innerHTML = htmlString2;
   } else {
     likelion_grid.innerHTML = htmlString1;
