@@ -240,7 +240,7 @@ const modal_info_members = [
     name: "진희원",
     motto: "느리지만 끝까지 해내기",
     github: "https://github.com/JinHeeWond",
-    introduce: "https://github.com/JinHeeWond/new-profile.git",
+    introduce: "https://jinheewond.github.io/new-profile/",
     instagram:
       "https://www.instagram.com/wlsgmldnjs?igsh=MTEyNHIzdWpzNjJhMg%3D%3D&utm_source=qr",
     profile: "./assets/img/modal/memoji/8.png",
