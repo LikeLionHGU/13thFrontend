@@ -90,7 +90,7 @@ const grid_info_members_mobile = [
     key2: "# 카이퍼",
     key3: "# 🐑",
     music: "Love Never Felt So Good - M..",
-    comment: "최강 프론트 엔드 화이팅!",
+    comment: "최강 프론트엔드 화이팅!",
   },
   {
     num: 4,
